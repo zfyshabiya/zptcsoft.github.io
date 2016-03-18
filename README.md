@@ -66,19 +66,17 @@
 3. 03 
 
 
-
 ## 课程资源
-1.  [w3school](//www.w3school.com.cn/)
-2.  [css3手册在线版](//css.doyoe.com/)，[css3手册下载](//css.doyoe.com/css.chm)
-3.  史上最性感的编辑器-[**sublimetext**](www.sublimetext.com/)，[安装步骤](soft/01install sublime_text.md)，**sublime text常用插件集成版** [百度网盘下载](//pan.baidu.com/s/1nubND8l)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/01Sublime%20Text%202.0.2%20x64.rar), [学习资源](//www.jianshu.com/p/d1b9a64e2e37)。
-4.  **GithubDesktop安装**，首先安装[**.net Framework 4.5**](//www.microsoft.com/zh-cn/download/details.aspx?id=30653), 其次解压缩安装**Github Desktop**[百度网盘下载](//pan.baidu.com/s/1i4bVR4T)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/02Github%20Desktop.rar)。
-5.  [html标签参考手册](http://www.w3school.com.cn/tags/html_ref_byfunc.asp), [html 参考手册官方英文](https://www.w3.org/TR/html-markup/)
-6.  网站制作[视频教程](http://v.dxsbb.com/topiclist/wangzhan.html)
+1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。
+2.  [html标签参考手册](http://www.w3school.com.cn/tags/html_ref_byfunc.asp), [html 参考手册官方英文](https://www.w3.org/TR/html-markup/)
+3.  [css3手册在线版](//css.doyoe.com/)，[css3手册下载](//css.doyoe.com/css.chm)
+4.  史上最性感的编辑器-[**sublimetext**](www.sublimetext.com/)，[安装步骤](soft/01install sublime_text.md)，**sublime text常用插件集成版** [百度网盘下载](//pan.baidu.com/s/1nubND8l)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/01Sublime%20Text%202.0.2%20x64.rar), [学习资源](//www.jianshu.com/p/d1b9a64e2e37)。
+5.  **GithubDesktop安装**，首先安装[**.net Framework 4.5**](//www.microsoft.com/zh-cn/download/details.aspx?id=30653), 其次解压缩安装**Github Desktop**[百度网盘下载](//pan.baidu.com/s/1i4bVR4T)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/02Github%20Desktop.rar)。
+6.  网站制作[视频教程](http://v.dxsbb.com/topiclist/wangzhan.html)， 请大家帮忙整理网络系列学习教程。
+7.  前端导航
 
 ## 学友链接
-
 ### 软件151
-
 [01徐浩鹏](//github.com/xhp111/xhp111.github.io)
 [02李明豪](//github.com/fylmh/fylmh.github.io) 
 [04尹飞燕](//github.com/Ysidm/zptcsoft.github.io/)
@@ -88,7 +86,6 @@
 [08许丹妮](//github.com/xudanni/xudanni.github.io)
 [09陈浩](//github.com/BlackTeaChan/BlackTeaChan.github.io)
 [10杨登欢](//github.com/916hh/916hh.github.io)
- 
  
 [12任军](//github.com/Ghostrj/Ghostrj.github.io)
 [13章宇凯](//github.com/kaiyfy/kaiyfy.github.io)
@@ -100,7 +97,6 @@
 [19王永琪](//github.com/29816768/29816768.github.io)
 [21白逢喜](//github.com/b526879840/b526879840.github.io)
 
- 
 [22夏远征](//github.com/SBNMC/SBNMC.github.io)
 [23李传访](//github.com/idcnm/idcnm.github.io)
 [24曾丽丽](//github.com/zilanhua/zilanhua.github.io)
@@ -121,8 +117,6 @@
 [39刘晓辉](//github.com/liuxiaohui2060/liuxiaohui2060.github.io)
 [41徐鹏](//github.com/xp1065013466/xp1065013466.github.io)
 
- 
-
 ### 软件152
 [01余家宝](//github.com/prtake/prtake.github.io) 
 [02郑柯柯](//github.com/771490657/771490657.github.io)
@@ -133,7 +127,6 @@
 [07戴王辉](//github.com/zfyshabiya/zfyshabiya.github.io)
 [08方搏](//github.com/acher886654/acher886654.github.io)
 [09陈猛](//github.com/chen321/chen321.github.io)
-
 
 [10周冰婕](//github.com/zptczbj/zptczbj.github.io)
 [11陈章文](//github.com/saber12458/saber12458.github.io) 
