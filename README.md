@@ -72,8 +72,8 @@
 3.  [css3手册在线版](//css.doyoe.com/)，[css3手册下载](//css.doyoe.com/css.chm)
 4.  史上最性感的编辑器-[**sublimetext**](www.sublimetext.com/)，[安装步骤](soft/01install sublime_text.md)，**sublime text常用插件集成版** [百度网盘下载](//pan.baidu.com/s/1nubND8l)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/01Sublime%20Text%202.0.2%20x64.rar), [学习资源](//www.jianshu.com/p/d1b9a64e2e37)。
 5.  **GithubDesktop安装**，首先安装[**.net Framework 4.5**](//www.microsoft.com/zh-cn/download/details.aspx?id=30653), 其次解压缩安装**Github Desktop**[百度网盘下载](//pan.baidu.com/s/1i4bVR4T)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/02Github%20Desktop.rar)。
-6.  网站制作[视频教程](http://v.dxsbb.com/topiclist/wangzhan.html)， 请大家帮忙整理网络系列学习教程。
-7.  前端导航
+6. [Github Desktop使用教程](https://github.com/zptcsoft/zptcsoft.github.io/blob/master/soft/02HowToUseGithubDesktop.md), [廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+7.  网站制作[视频教程](http://v.dxsbb.com/topiclist/wangzhan.html)， 请大家帮忙整理网络系列学习教程。
 
 ## 学友链接
 ### 软件151
@@ -183,7 +183,8 @@
 2. 36陈兴博创建资源[分享帖](https://github.com/zptcsoft/zptcsoft.github.io/issues/113)，平时成绩加5分，这就对了，yeah！
 3. 24郑爱萍提问[问题](https://github.com/zptcsoft/zptcsoft.github.io/issues/115), 平时成绩加5分。大家一起来盖楼！！
 4. 03单超艺、10周冰婕创建[分享帖](https://github.com/zptcsoft/zptcsoft.github.io/issues/121)，平时成绩各加5分。
-5. come on
+5. 30毛杰就Github Desktop使用问题进行[提问](https://github.com/zptcsoft/zptcsoft.github.io/issues/130)，平时成绩加5分，Fighting，少年！
+6. 继续
 
 
 
