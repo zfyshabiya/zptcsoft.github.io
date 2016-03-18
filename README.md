@@ -163,7 +163,7 @@
 [38刘毅梅](//github.com/gcllym/gcllym.github.io)
 [39王丽娜](//github.com/waseni/waseni.github.io)
 [40童伟键](//github.com/twjznb/twjznb.github.io)
-41伍吉康
+[41伍吉康](https://github.com/121243380/121243380.github.io)
 
 ## 课程活动
 1. 注册github账号，新建**用户名.github.io**仓库，确保可以在线浏览。
