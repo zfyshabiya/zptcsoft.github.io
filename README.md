@@ -63,12 +63,10 @@
 ## 课程讲义
 1. [课程概述](//zptcsoft.github.io/ppt/01.htm)
 2. [web概述](//zptcsoft.github.io/ppt/02.htm)
-3. [web概述](//zptcsoft.github.io/ppt/03.htm)
-4. [web概述](//zptcsoft.github.io/ppt/04.htm)
-5. [web概述](//zptcsoft.github.io/ppt/05.htm)
-6. [web概述](//zptcsoft.github.io/ppt/06.htm)
-
-
+3. [html概述](//zptcsoft.github.io/ppt/03.htm)
+4. [HTML元素](//zptcsoft.github.io/ppt/04.htm)
+5. [HTML属性](//zptcsoft.github.io/ppt/05.htm)
+6. [HTML文档元数据元素](//zptcsoft.github.io/ppt/06.htm)
 
 ## 课程资源
 1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。
