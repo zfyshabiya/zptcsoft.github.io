@@ -62,8 +62,12 @@
 
 ## 课程讲义
 1. [课程概述](//zptcsoft.github.io/ppt/01.htm)
-2. [网页相关](//zptcsoft.github.io/ppt/02.htm)
-3. 03 
+2. [web概述](//zptcsoft.github.io/ppt/02.htm)
+3. [web概述](//zptcsoft.github.io/ppt/03.htm)
+4. [web概述](//zptcsoft.github.io/ppt/04.htm)
+5. [web概述](//zptcsoft.github.io/ppt/05.htm)
+6. [web概述](//zptcsoft.github.io/ppt/06.htm)
+
 
 
 ## 课程资源
@@ -174,17 +178,19 @@
 ## 加分快讯
 
 ### 软件151 
-1. 24曾丽丽 成功提交[更改](https://github.com/zptcsoft/zptcsoft.github.io/pull/126)，获得悬赏分数20分，鼓掌庆贺吧。
+1. 24曾丽丽 成功提交[更改](//github.com/zptcsoft/zptcsoft.github.io/pull/126)，获得悬赏分数20分，鼓掌庆贺吧。
+2. 27王瑶 发起很有价值的[Issues](//github.com/zptcsoft/zptcsoft.github.io/issues/135)，平时成绩加5分。
 2. 继续呀，海量分数等你拿。
 
 
 ### 软件152
-1. 37杨虹提问[问题](https://github.com/zptcsoft/zptcsoft.github.io/issues/112)，平时成绩加5分，同学们动起来，go! go!
-2. 36陈兴博创建资源[分享帖](https://github.com/zptcsoft/zptcsoft.github.io/issues/113)，平时成绩加5分，这就对了，yeah！
-3. 24郑爱萍提问[问题](https://github.com/zptcsoft/zptcsoft.github.io/issues/115), 平时成绩加5分。大家一起来盖楼！！
-4. 03单超艺、10周冰婕创建[分享帖](https://github.com/zptcsoft/zptcsoft.github.io/issues/121)，平时成绩各加5分。
-5. 30毛杰就Github Desktop使用问题进行[提问](https://github.com/zptcsoft/zptcsoft.github.io/issues/130)，平时成绩加5分，Fighting，少年！
-6. 继续
+1. 37杨虹提问[问题](//github.com/zptcsoft/zptcsoft.github.io/issues/112)，平时成绩加5分，同学们动起来，go! go!
+2. 36陈兴博创建资源[分享帖](//github.com/zptcsoft/zptcsoft.github.io/issues/113)，平时成绩加5分，这就对了，yeah！
+3. 24郑爱萍提问[问题](//github.com/zptcsoft/zptcsoft.github.io/issues/115), 平时成绩加5分。大家一起来盖楼！！
+4. 03单超艺、10周冰婕创建[分享帖](//github.com/zptcsoft/zptcsoft.github.io/issues/121)，平时成绩各加5分。
+5. 30毛杰就Github Desktop使用问题进行[提问](//github.com/zptcsoft/zptcsoft.github.io/issues/130)，平时成绩加5分，Fighting，少年！
+6. 10周冰婕参与[Issues讨论](//github.com/zptcsoft/zptcsoft.github.io/issues/135)，回答基本正确，平时成绩加5分，大家积极讨论吧。
+6. 海量分数等着你。
 
 
 
