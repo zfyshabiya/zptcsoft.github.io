@@ -66,7 +66,10 @@
 3. [html概述](//zptcsoft.github.io/ppt/03.htm)
 4. [HTML元素](//zptcsoft.github.io/ppt/04.htm)
 5. [HTML属性](//zptcsoft.github.io/ppt/05.htm)
-6. [HTML文档元数据元素](//zptcsoft.github.io/ppt/06.htm)
+6. [HTML文档元数据和脚本元素](//zptcsoft.github.io/ppt/06.htm)
+7. [HTML节点元素](//zptcsoft.github.io/ppt/07.htm)
+8. [HTML文本元素](//zptcsoft.github.io/ppt/08.htm)
+9. [HTML图像元素](//zptcsoft.github.io/ppt/09.htm)
 
 ## 课程资源
 1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。
