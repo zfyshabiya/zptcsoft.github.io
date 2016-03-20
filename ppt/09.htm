@@ -158,7 +158,7 @@
 </div>
 </article></div></div>
 </article></section></slide>
-<slide class="slide" style="background:#fff url(./img/09/url.png) center bottom no-repeat;background-size:60%;color:#000;"><section class="slide-wrapper"><article class="flexbox vleft">
+<slide class="slide" style="background:#8B8B8B url(/img/09/url.png) center bottom no-repeat;background-size:70%;"><section class="slide-wrapper"><article class="flexbox vleft">
 
 <h2>媒体嵌入与资源地址</h2>
 <ol class="fadeIn">
@@ -167,6 +167,73 @@
 <li>Uniform Resource Locator（URL）</li>
 </ol>
 
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>绝对地址与相对地址</h2>
+<pre><code class="html">&lt;!-- 绝对地址 --&gt;
+&lt;img src=&quot;file:///E:/zptcsoft.github.io/ppt/img/09/url.png&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;http://zptc.github.io/ppt/img/09/url.png&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;//zptc.github.io/ppt/img/09/url.png&quot; alt=&quot;&quot;&gt; 
+
+&lt;!-- 相对地址 --&gt;
+&lt;img src=&quot;img/09/url.png&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;./img/09/url.png&quot; alt=&quot;&quot;&gt;
+
+&lt;!-- 资源地址相对地址、绝对地址均可。
+     可以使用http协议、https协议，但不能采用file协议。 
+     建议采用省略协议的方式
+        &lt;img src=&quot;//zptc.github.io/ppt/img/09/url.png&quot; alt=&quot;&quot;&gt;     
+--&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide fill" style="background:#487BD3 url(img/09/snippet.png) right bottom no-repeat;"  data-on-build="Slide.magic" data-on-enter="Slide.magic.init"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<div class="magic"><div class="magicItem current pagedown"  data-transition="rollIn"><article>
+<div class="magic-wrapper">
+<article>
+<h2>Sublime text 新建Snippet</h2>
+<ul>
+<li>emmet对figure支持不佳</li>
+<li>Snippet方式支持figure</li>
+</ul>
+
+</article>
+</div>
+</article></div>
+<div class="magicItem next pagedown"  data-transition="rollIn"><article>
+<div class="magic-wrapper">
+<article>
+<h2>创建步骤</h2>
+<ol>
+<li>选择菜单<strong>Tools/New Snippet…</strong>，跳出Snippet编辑窗口</li>
+<li>根据您的需要修改Snippet文件，figure代码修改如下</li>
+<li>命名为<em>figure.sublime-snippet</em>, 存到<strong>Packages</strong>下的<strong>user文件夹</strong></li>
+<li>重启sublime text，使用<strong><kbd>mfig+tab</kbd></strong>即可激活</li>
+</ol>
+<pre><code class="xml">&lt;snippet&gt;
+    &lt;content&gt;&lt;![CDATA[
+&lt;figure&gt;
+    &lt;figcaption&gt;${1:图像标题}&lt;/figcaption&gt;
+    &lt;img src=&quot;${2:图像地址}&quot; alt=&quot;${3:替代文本}&quot;&gt;
+&lt;/figure&gt;
+]]&gt;&lt;/content&gt;
+    &lt;!-- 可选: 设置如何激活该代码段 --&gt;
+    &lt;tabTrigger&gt;mfig&lt;/tabTrigger&gt;
+    &lt;!-- 可选：设置作用域，默认为所有文档有效。 ctrl+alt+shift+p 状态栏获取文件作用域--&gt;
+    &lt;scope&gt;text.html.basic&lt;/scope&gt;
+    &lt;!-- 可选，设置描述信息 --&gt;
+    &lt;!-- &lt;description&gt;My figure Snippet&lt;/description&gt; --&gt;
+&lt;/snippet&gt;
+</code></pre>
+<blockquote>
+<p>了解如何<a href="///github.com/zptcsoft/sublime-text-scope/blob/master/README.md" target="_blank">获取作用域</a></p>
+</blockquote>
+
+</article>
+</div>
+</article></div></div>
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
 <h1>网页设计与制作</h1>
