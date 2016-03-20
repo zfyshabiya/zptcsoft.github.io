@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HTML文档元数据元素 - By whqet</title>
+    <title>HTML节点元素 - By whqet</title>
     <link rel="stylesheet" media="all" href="./css/nodeppt.css">
     <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
     
@@ -21,19 +21,22 @@
 <div class="slides">
     <slides id="container">
         <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
-<h1>HTML文档元数据元素</h1>
+<h1>HTML节点元素-Sections elements</h1>
 <h2>演讲者：whqet</h2>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
 <h2>内容提纲</h2>
 <ol class="rollIn">
-<li>head元素</li>
-<li>title元素</li>
-<li>meta元素</li>
-<li>base元素</li>
-<li>style元素</li>
-<li>link元素</li>
+<li>body元素</li>
+<li>header元素</li>
+<li>footer元素</li>
+<li>nav元素</li>
+<li>aside元素</li>
+<li>article元素</li>
+<li>section元素</li>
+<li>address元素</li>
+<li>h1~h6元素</li>
 </ol>
 
 </article></section></slide>
@@ -67,7 +70,7 @@
     </tr>
     <tr>
         <td>文本级<br>Text-level semantics</td>
-        <td>span, a, em, strong, q, cite, mark, i, b, u, s, sup, sub, big, small, var, code, samp, data, time, ruby, rb, rp, rt, rtc, bdi, bdo, dfn, dbd, br, wbr</td>
+        <td>span, a, em, strong, q, cite, mark, i, b, u, s, sup, sub, big, small, var, code, samp, kbd, data, time, ruby, rb, rp, rt, rtc, bdi, bdo, dfn, br, wbr</td>
     </tr>
     <tr>
         <td>编辑 Edits</td>
@@ -93,281 +96,49 @@
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
 
-<h2>head元素</h2>
-<p><table class="thin tag">
-    <tr>
-        <th>类型</th><th>取值</th>
-    </tr>
-    <tr>
-        <td>分类</td>
-        <td>无</td>
-    </tr>
-    <tr>
-        <td>元素上下文</td>
-        <td>html元素里的第一个元素</td>
-    </tr>
-    <tr>
-        <td>内容模型</td>
-        <td>title、meta、style、link、script等元素</td>
-    </tr>
-    <tr>
-        <td>属性</td>
-        <td>全局属性</td>
-    </tr>
-</table></p>
-<blockquote>
-<p>head部分内容不在网页正文显示。</p>
-</blockquote>
-
-</article></section></slide>
-<slide class="slide"   data-on-build="Slide.magic" data-on-enter="Slide.magic.init"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<div class="magic"><div class="magicItem current pagedown"  data-transition="fadein"><article>
-<div class="magic-wrapper">
-<article>
-<h2>head元素示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;&lt;!-- 简化版 --&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-</article>
-</div>
-</article></div>
-<div class="magicItem next pagedown"  data-transition="fadein"><article>
-<div class="magic-wrapper">
-<article>
-<h2>head元素示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt;
-&lt;head&gt;&lt;!-- 复杂版 --&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;title&gt;腾讯首页&lt;/title&gt;
-    &lt;meta name=&quot;apple-itunes-app&quot; content=&quot;app-id=660653351&quot;&gt;
-    &lt;meta name=&quot;Keywords&quot; content=&quot;资讯,新闻,财经,房产,视频,NBA,科技&quot;&gt;
-    &lt;meta name=&quot;description&quot; content=&quot;XX网(www.QQ.com)是……&quot; &gt;
-    &lt;link rel=&quot;shortcut icon&quot; href=&quot;//mat1.gtimg.com/www/icon/favicon2.ico&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;//mat1.gtimg.com/www/css/qq2012/hot_word_sogou.css&quot; media=&quot;all&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-</article>
-</div>
-</article></div></div>
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2>title元素</h2>
-<p><table class="thin tag">
-    <tr>
-        <th>类型</th><th>取值</th>
-    </tr>
-    <tr>
-        <td>分类</td>
-        <td>元数据内容-Metadata content</td>
-    </tr>
-    <tr>
-        <td>元素上下文</td>
-        <td>没有其它title元素的head元素</td>
-    </tr>
-    <tr>
-        <td>内容模型</td>
-        <td>文本</td>
-    </tr>
-    <tr>
-        <td>属性</td>
-        <td>全局属性</td>
-    </tr>
-</table></p>
-<blockquote>
-<p>一般来说，title元素是必须的，一个head元素有且仅有一个title。</p>
-</blockquote>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="vleft">
-
-<h2>title元素示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;网页标题，在浏览器窗口标题栏显示&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2>meta元素</h2>
-<p><table class="thin tag">
-    <tr>
-        <th>类型</th><th>取值</th>
-    </tr>
-    <tr>
-        <td>分类</td>
-        <td>元数据内容-Metadata content</td>
-    </tr>
-    <tr>
-        <td>元素上下文</td>
-        <td>一般为head元素</td>
-    </tr>
-    <tr>
-        <td>内容模型</td>
-        <td>无，meta元素是空元素，没有结束标签</td>
-    </tr>
-    <tr>
-        <td>属性</td>
-        <td>
-            全局属性 <br>
-            name属性，元数据名称 <br>
-            http-equiv属性，Pragma指令 <br>、
-            content属性，元数据值 <br>
-            charset属性，设置编码方式
-        </td>
-    </tr>
-</table></p>
-<blockquote>
-<p>base元素可以指定文档基准URL和基准target</p>
-</blockquote>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article>
-<h2>meta元素示例</h2>
-<pre><code class="html">&lt;!-- 设置编码方式 --&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;!-- name和content属性搭配使用，name属性大小写敏感 --&gt;
-&lt;meta name=&quot;keywords&quot; content=&quot;资讯,新闻,财经,房产,视频,NBA,科技&quot;&gt;
-&lt;meta name=&quot;description&quot; content=&quot;XX网是……&quot; &gt;
-&lt;meta name=&quot;author&quot; content=&quot;whqet，whqet@qq.com&quot;&gt;
-&lt;meta name=&quot;copyright&quot; content=&quot;本网站版权归zptcsoft所有&quot;&gt;
-&lt;meta name=&quot;generator&quot; content=&quot;sublime text 2&quot;&gt;
-&lt;meta name=&quot;application-name&quot; content=&quot;应用名称&quot;&gt;
-&lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot; &gt;
-&lt;meta name=&quot;revisit-after&quot; content=&quot;7 days&quot; &gt;
-&lt;!-- http-equiv属性和content属性搭配使用 --&gt;
-&lt;meta http-equiv=&quot;content-language&quot; content=&quot;zh-CN&quot; &gt; &lt;!--建议使用lang属性--&gt;
-&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=UTF-8&quot;&gt; &lt;!--建议使用charset--&gt;
-&lt;meta http-equiv=&quot;default-style&quot; content=&quot;文档首选样式&quot;&gt;
-&lt;meta http-equiv=&quot;refresh&quot; content=&quot;20; URL=another.html&quot;&gt;
-&lt;meta http-equiv=&quot;set-cookie&quot; &quot;name=data; path=path; expires=Day, DD-MMM-YY HH:MM:SS ZON&quot;&gt;
-&lt;!-- 新特征 --&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;  &lt;!-- meta:vp --&gt;
-&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt; &lt;!--优先使用edge和chrome--&gt;
-&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=7&quot;&gt; &lt;!-- meta:compat --&gt;
-&lt;meta name=&quot;renderer&quot; content=&quot;webkit|ie-comp|ie-stand&quot;&gt; &lt;!--指定双核浏览器优先使用哪种内核--&gt;
-&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt; &lt;!-- 启用 WebApp 全屏模式 --&gt;
-</code></pre>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2>base元素</h2>
-<p><table class="thin tag">
-    <tr>
-        <th>类型</th><th>取值</th>
-    </tr>
-    <tr>
-        <td>分类</td>
-        <td>元数据内容-Metadata content</td>
-    </tr>
-    <tr>
-        <td>元素上下文</td>
-        <td>没有其它base元素的head元素</td>
-    </tr>
-    <tr>
-        <td>内容模型</td>
-        <td>无，base元素是个空元素</td>
-    </tr>
-    <tr>
-        <td>属性</td>
-        <td>
-            全局属性 <br>
-            href属性，文档基准URL <br>
-            target属性， 文档基准target
-        </td>
-    </tr>
-</table></p>
-<blockquote>
-<p>base元素可以指定文档基准URL和基准target</p>
-</blockquote>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article>
-<h2>base元素示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;base href=&quot;//www.baidu.com/s&quot; target=&quot;_blank&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;a href=&quot;?wd=html5&quot;&gt;html5&lt;/a&gt;
-    &lt;!-- 相当于 --&gt;
-    &lt;a href=&quot;//www.baidu.com/s?wd=html5&quot; target=&quot;_blank&quot;&gt;html5&lt;/a&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2>style元素</h2>
+<h2>body元素</h2>
 <table class="thin tag">
     <tr>
         <th>类型</th><th>取值</th>
     </tr>
     <tr>
         <td>分类</td>
-        <td>元数据内容-Metadata content</td>
+        <td>Sectioning root</td>
     </tr>
     <tr>
         <td>元素上下文</td>
-        <td>一般在head部分</td>
+        <td>html元素里的第二个元素</td>
     </tr>
     <tr>
         <td>内容模型</td>
-        <td>根据type类型而定</td>
+        <td>流内容<a href="///www.w3.org/TR/html/dom.html#flow-content-1" target="_blank">Flow content</a></td>
     </tr>
     <tr>
         <td>属性</td>
         <td>
-            全局属性 <br>
-            media属性，应用媒体<br>
-            type属性， 嵌入资源类型
+            全局属性<br>
+            onafterprint、onhashchange、onmessage、<br>            ononline、onpageshow、onstorage等<a href="///www.w3.org/TR/html/webappapis.html#handler-window-onafterprint" target="_blank">行为属性</a>
         </td>
     </tr>
 </table>
 </article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article>
-<h2>style元素示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>body元素示例 <a href="./demos/online.html" target="_blank">案例</a></h2>
+<pre><code class="html">&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-        .info{color:orange;}
-    &lt;/style&gt;
+    &lt;title&gt;Online or offline?&lt;/title&gt;
+    &lt;script&gt;
+        function update(online) {
+            document.getElementById(&#39;status&#39;).textContent = online ? &#39;Online&#39; : &#39;Offline&#39;;
+        }
+    &lt;/script&gt;
 &lt;/head&gt;
-&lt;body&gt;
-    &lt;p class=&quot;info&quot;&gt;&lt;/p&gt;
+&lt;body ononline=&quot;update(true)&quot;
+      onoffline=&quot;update(false)&quot;
+      onload=&quot;update(navigator.onLine)&quot;&gt;
+&lt;p&gt;You are: &lt;span id=&quot;status&quot;&gt;(Unknown)&lt;/span&gt;&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -375,61 +146,425 @@
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
 
-<h2>link元素</h2>
+<h2>header元素</h2>
 <table class="thin tag">
     <tr>
         <th>类型</th><th>取值</th>
     </tr>
     <tr>
         <td>分类</td>
-        <td>元数据内容-Metadata content</td>
+        <td>
+            流内容-Flow content <br>
+            可感知内容-Palpable content
+        </td>
     </tr>
     <tr>
         <td>元素上下文</td>
-        <td>一般在head部分</td>
+        <td>需要流内容的地方</td>
     </tr>
     <tr>
         <td>内容模型</td>
-        <td>空，空元素，无结束标签</td>
+        <td>流内容，但是不能使header、footer和main三个标签。</td>
     </tr>
     <tr>
         <td>属性</td>
-        <td>
-            全局属性 <br>
-            href属性，链接资源地址<br>
-            hreflang属性，链接资源语言 <br>
-            <a href="///www.w3school.com.cn/tags/att_link_rel.asp" target="_blank">rel属性</a>， 链接资源和宿主文件的关系<br>
-            crossorigin属性，指定元素如何处理交叉源请求<br>
-            type属性， 链接资源类型<br>
-            media属性，应用媒体<br>
-            <a href="///www.w3school.com.cn/tags/att_link_sizes.asp" target="_blank">sizes属性</a>，icons的大小
-        </td>
+        <td>全局属性</td>
     </tr>
 </table>
 </article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article>
-<h2>link元素示例</h2>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>header元素示例</h2>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;print.css&quot; media=&quot;print&quot;&gt;
-    &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;favicon.ico&quot;&gt;
-    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;favicon.png&quot;&gt;
-    &lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;RSS&quot; href=&quot;rss.xml&quot;&gt;
-    &lt;link rel=&quot;alternate&quot; type=&quot;application/atom+xml&quot; title=&quot;Atom&quot; href=&quot;atom.xml&quot;&gt;
-    &lt;link rel=&quot;import&quot; href=&quot;component.html&quot;&gt;
-    &lt;link media=&quot;only screen and (max-device-width: 480px)&quot; href=&quot;http://wordpress.org/style/iphone.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
-    &lt;link rel=&quot;next&quot; href=&quot;http://www.syfyportal.com/atomFeed.php?page=4&quot;/&gt;
+    &lt;title&gt;网页标题&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;p class=&quot;info&quot;&gt;&lt;/p&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Little Green Guys With Guns&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;/games&quot;&gt;Games&lt;/a&gt;
+                &lt;li&gt;&lt;a href=&quot;/forum&quot;&gt;Forum&lt;/a&gt;
+                &lt;li&gt;&lt;a href=&quot;/download&quot;&gt;Download&lt;/a&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;h2&gt;Important News&lt;/h2&gt;
+        &lt;p&gt;To play today&#39;s games you will need to update your client.&lt;/p&gt;
+        &lt;h2&gt;Games&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;p&gt;You have three active games:&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>footer元素</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>
+            流内容-Flow content <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要流内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>流内容，但是不能使header、footer和main三个标签。</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>全局属性</td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>footer元素示例</h2>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;网页标题&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;some content&lt;/header&gt;
+    &lt;main&gt;some content&lt;/main&gt;
+    &lt;footer&gt;
+        &lt;nav&gt;
+            &lt;p&gt;
+                &lt;a href=&quot;/credits.html&quot;&gt;Credits&lt;/a&gt; —
+                &lt;a href=&quot;/tos.html&quot;&gt;Terms of Service&lt;/a&gt; —
+                &lt;a href=&quot;/index.html&quot;&gt;Blog Index&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/nav&gt;
+        &lt;p&gt;Copyright © 2009 Gordon Freeman&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>nav元素</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>
+            流内容-Flow content <br>
+            节点内容-Sectioning content <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要流内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>流内容，但是不能使用main元素</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>全局属性</td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>nav元素示例</h2>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;网页标题&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;some content&lt;/header&gt;
+    &lt;main&gt;some content&lt;/main&gt;
+    &lt;footer&gt;
+        &lt;nav&gt;
+            &lt;p&gt;
+                &lt;a href=&quot;/credits.html&quot;&gt;Credits&lt;/a&gt; —
+                &lt;a href=&quot;/tos.html&quot;&gt;Terms of Service&lt;/a&gt; —
+                &lt;a href=&quot;/index.html&quot;&gt;Blog Index&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/nav&gt;
+        &lt;p&gt;Copyright © 2009 Gordon Freeman&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>aside元素</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>
+            流内容-Flow content <br>
+            节点内容-Sectioning content <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要流内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>流内容，但是不能使用main元素</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>全局属性</td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>aside元素示例</h2>
+<pre><code class="html">&lt;header&gt;
+    &lt;h1&gt;My wonderful blog&lt;/h1&gt;
+    &lt;p&gt;My tagline&lt;/p&gt;
+&lt;/header&gt;
+&lt;aside&gt;
+    &lt;nav&gt;
+        &lt;h1&gt;My blogroll&lt;/h1&gt;
+        &lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://blog.example.com/&quot;&gt;Example Blog&lt;/a&gt;&lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;nav&gt;other nav&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;aside&gt;other aside&lt;/aside&gt;
+&lt;article&gt;
+    &lt;h1&gt;My last post&lt;/h1&gt;
+    &lt;p&gt;This is my last post.&lt;/p&gt;
+    &lt;footer&gt;&lt;p&gt;&lt;a href=&quot;/last-post&quot; rel=bookmark&gt;Permalink&lt;/a&gt;&lt;/footer&gt;
+&lt;/article&gt;
+&lt;article&gt;other article&lt;/article&gt;
+&lt;footer&gt;
+    &lt;nav&gt;
+        &lt;a href=&quot;/archives&quot;&gt;Archives&lt;/a&gt; —
+        &lt;a href=&quot;/about&quot;&gt;About me&lt;/a&gt; —
+        &lt;a href=&quot;/copyright&quot;&gt;Copyright&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/footer&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>article元素</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>
+            流内容-Flow content <br>
+            节点内容-Sectioning content <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要流内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>流内容</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>全局属性</td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>article元素示例</h2>
+<pre><code class="html">&lt;article itemscope itemtype=&quot;http://schema.org/BlogPosting&quot;&gt;
+    &lt;header&gt;
+        &lt;h1 itemprop=&quot;headline&quot;&gt;The Very First Rule of Life&lt;/h1&gt;
+        &lt;p&gt;
+            &lt;time itemprop=&quot;datePublished&quot; datetime=&quot;2009-10-09&quot;&gt;3 days ago&lt;/time&gt;
+        &lt;/p&gt;
+        &lt;link itemprop=&quot;url&quot; href=&quot;?comments=0&quot;&gt;
+    &lt;/header&gt;
+    &lt;p&gt;If there&#39;s a microphone anywhere near you, assume it&#39;s hot and sending whatever you&#39;re saying to the world. Seriously.&lt;/p&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;footer&gt;
+        &lt;a itemprop=&quot;discussionUrl&quot; href=&quot;?comments=1&quot;&gt;Show comments...&lt;/a&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>section元素</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>
+            流内容-Flow content <br>
+            节点内容-Sectioning content <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要流内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>流内容</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>全局属性</td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>section元素示例</h2>
+<pre><code class="html">&lt;article class=&quot;book&quot;&gt;
+    &lt;header&gt;
+        &lt;h2&gt;My Book&lt;/h2&gt;
+        &lt;p&gt;A sample with not much content&lt;/p&gt;
+        &lt;p&gt;&lt;small&gt;Published by Dummy Publicorp Ltd.&lt;/small&gt;&lt;/p&gt;
+    &lt;/header&gt;
+    &lt;section class=&quot;chapter&quot;&gt;
+        &lt;h3&gt;My First Chapter&lt;/h3&gt;
+        &lt;p&gt;This is the first of my chapters. It doesn&#39;t say much.&lt;/p&gt;
+        &lt;p&gt;But it has two paragraphs!&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;chapter&quot;&gt;
+        &lt;h3&gt;It Continutes: The Second Chapter&lt;/h3&gt;
+        &lt;p&gt;Bla dee bla, dee bla dee bla. Boom.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;appendix&quot;&gt;
+        &lt;h3&gt;Appendix A: Overview of Examples&lt;/h3&gt;
+        &lt;p&gt;These are demonstrations.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;footer content&lt;/footer&gt;
+&lt;/article&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>address元素</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>
+            流内容-Flow content <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要流内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>流内容，但是不能使header、footer、section、address等节点元素</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>全局属性</td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>address元素示例</h2>
+<pre><code class="html">&lt;address&gt;
+ &lt;a href=&quot;../People/Raggett/&quot;&gt;Dave Raggett&lt;/a&gt;,
+ &lt;a href=&quot;../People/Arnaud/&quot;&gt;Arnaud Le Hors&lt;/a&gt;,
+ contact persons for the &lt;a href=&quot;Activity&quot;&gt;W3C HTML Activity&lt;/a&gt;
+&lt;/address&gt;
+</code></pre>
+<address>
+ <a href="../People/Raggett/">Dave Raggett</a>,
+ <a href="../People/Arnaud/">Arnaud Le Hors</a>,
+ contact persons for the <a href="Activity">W3C HTML Activity</a>
+</address>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>h1~h6元素</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>
+            流内容-Flow content <br>
+            标题内容-Heading content <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要短句内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>短句内容-<a href="///www.w3.org/TR/html/dom.html#phrasing-content-1" target="_blank">Phrasing content</a></td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>全局属性</td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<p>{:.flexbox.vleft}</p>
+<h2>h1~h6元素示例</h2>
+<pre><code class="html">&lt;h1&gt;一号标题&lt;/h1&gt;
+&lt;h2&gt;二号标题&lt;/h2&gt;
+&lt;h3&gt;三号标题&lt;/h3&gt;
+&lt;h4&gt;四号标题&lt;/h4&gt;
+&lt;h5&gt;五号标题&lt;/h5&gt;
+&lt;h6&gt;六号标题&lt;/h6&gt;
+</code></pre>
+<p><h1>一号标题</h1></p>
+<p><h2>二号标题</h2></p>
+<p><h3>三号标题</h3></p>
+<p><h4>四号标题</h4></p>
+<p><h5>五号标题</h5></p>
+<h6>六号标题</h6>
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
 <h1>网页设计与制作</h1>

@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HTML元素 - By whqet</title>
+    <title>HTML图像元素 - By whqet</title>
     <link rel="stylesheet" media="all" href="./css/nodeppt.css">
     <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
     
@@ -21,62 +21,22 @@
 <div class="slides">
     <slides id="container">
         <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
-<h1>HTML元素</h1>
+<h1>HTML图像元素</h1>
 <h2>演讲者：whqet</h2>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
 <h2>内容提纲</h2>
 <ol class="rollIn">
-<li>元素概述</li>
-<li>元素类型</li>
-<li>元素分类</li>
+<li>图像</li>
+<li>媒体嵌入与资源地址</li>
+<li>Sublime text创建新的Snippet</li>
 </ol>
-
-</article></section></slide>
-<slide class="slide" style="background:url(./img/02/html.jpg) left 20% no-repeat; background-size:100%"><section class="slide-wrapper"><article>
-<h2>html简介</h2>
-<blockquote>
-<p>超文本标记语言</p>
-</blockquote>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
 <h2><a href="///w3school.com.cn/tags/html_ref_byfunc.asp" target="_blank">元素概述</a></h2>
 <img src="./img/03/Periodic-Table-of-HTML-Elements-large.png" alt="">
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2><a href="///www.w3.org/TR/html/syntax.html#elements-0" target="_blank">元素类型</a></h2>
-<p><table class="thinner tag">
-    <tr>
-        <th>类型</th><th>标签</th>
-    </tr>
-    <tr>
-        <td>空元素<br>Void elements</td>
-        <td>meta, base, link, br, wbr, hr, img, area, col, input,keygen, embed, param, source, track</td>
-    </tr>
-    <tr>
-        <td>原生文本元素<br>Raw text elements</td>
-        <td>script, style</td>
-    </tr>
-    <tr>
-        <td>可回避的原生文本元素<br>escapable raw text elements</td>
-        <td>textarea, title</td>
-    </tr>
-    <tr>
-        <td>外来元素<br>Foreign elements</td>
-        <td>从SVG或MathML中引用的元素</td>
-    </tr>
-    <tr>
-        <td>其他元素<br>Normal elements</td>
-        <td>其他html元素</td>
-    </tr>
-</table></p>
-<blockquote>
-<p>空元素（单标签）中间不能放内容，因为没有结束标签</p>
-</blockquote>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
@@ -130,49 +90,38 @@
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
 
-<h2>html文档类型定义</h2>
-<blockquote>
-<p>DOCTYPE是必须的，如果省略，浏览器可能会使用与标准不兼容的渲染模式。</p>
-</blockquote>
-<pre><code class="html">&lt;!-- html5 --&gt;
-&lt;!DOCTYPE html&gt;
-
-&lt;!-- xhtml 1.1 --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;
-&lt;!-- xhtml 1.0 strict --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
-&lt;!-- xhtml 1.0 transitional --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
-
-&lt;!-- html4.01 --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
-&lt;!-- html4 --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-</code></pre>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2>html根元素</h2>
+<h2>图像元素img</h2>
 <table class="thin tag">
     <tr>
         <th>类型</th><th>取值</th>
     </tr>
     <tr>
         <td>分类</td>
-        <td>无</td>
+        <td>流内容-Flow content <br>
+            短句内容-Phrasing content  <br>
+            嵌入内容-Embedded content <br>
+            表单相关元素-Form-associated element
+        </td>
     </tr>
     <tr>
         <td>元素上下文</td>
-        <td>根元素，没有父对象</td>
+        <td>需要嵌入内容的地方</td>
     </tr>
     <tr>
         <td>内容模型</td>
-        <td>head元素、body元素</td>
+        <td>空，空元素，无结束标签</td>
     </tr>
     <tr>
         <td>属性</td>
-        <td>全局属性、manifest属性(指定描述了文档的缓存信息的URL)</td>
+        <td>
+            全局属性 <br>
+            alt属性，图像不可见时的替代文本 <br>
+            src属性，资源地址 <br>
+            crossorigin属性，如何处理交叉请求 <br>
+            width和height属性，宽和高，只设置其中一个，另一个自动缩放。 <br>
+            usemap属性, 使用的热区名称 <br>
+            ismap属性，图像是否是服务器端的热区地图
+        </td>
     </tr>
 </table>
 </article></section></slide>
@@ -181,19 +130,10 @@
 <div class="magic"><div class="magicItem current pagedown"  data-transition="fadein"><article>
 <div class="magic-wrapper">
 <article>
-<h2>html根元素示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;!-- lang属性指定网页文档语言 --&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
+<h2>img元素示例</h2>
+<pre><code class="html">&lt;img src=&quot;img/02/HTML5_sticker.png&quot; alt=&quot;html5 sticker&quot; width=&quot;600&quot;&gt;
 </code></pre>
+<img src="./img/02/HTML5_sticker.png" alt="html5 sticker" width="600">
 
 </article>
 </div>
@@ -201,36 +141,32 @@
 <div class="magicItem next pagedown"  data-transition="fadein"><article>
 <div class="magic-wrapper">
 <article>
-<h2>html manifest属性示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html manifest=&quot;offline.manifest&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;title&gt;HTML5-manifest-sample demo&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheet/HTML5-manifest-sample.css&quot;/&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;content&quot;&gt;&lt;/div&gt;
-  &lt;script src=&quot;javascript/HTML5-manifest-sample.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<h2>img元素位于Figure元素中</h2>
+<blockquote>
+<p>html5 推荐方式</p>
+</blockquote>
+<pre><code class="html">&lt;figure&gt;
+    &lt;img src=&quot;img/02/HTML5_sticker.png&quot; alt=&quot;html5 sticker&quot; width=&quot;600&quot;&gt;
+    &lt;figcaption&gt;html5 is coming&lt;/figcaption&gt;
+&lt;/figure&gt;
 </code></pre>
-<pre><code>CACHE MANIFEST
-
-CACHE:
-index.html
-javascript/HTML5-manifest-sample.js
-stylesheet/HTML5-manifest-sample.css
-
-NETWORK:
-*
-
-FALLBACK:  
-//offline.html
-</code></pre>
+<figure>
+    <img src="./img/02/HTML5_sticker.png" alt="html5 sticker" width="600">
+    <figcaption>html5 is coming</figcaption>
+</figure>
 </article>
 </div>
 </article></div></div>
+</article></section></slide>
+<slide class="slide" style="background:#fff url(./img/09/url.png) center bottom no-repeat;background-size:60%;color:#000;"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>媒体嵌入与资源地址</h2>
+<ol class="fadeIn">
+<li>图像、视频等媒体<strong>嵌入</strong>网页中使用</li>
+<li>资源地址是嵌入媒体最终的依据</li>
+<li>Uniform Resource Locator（URL）</li>
+</ol>
+
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
 <h1>网页设计与制作</h1>

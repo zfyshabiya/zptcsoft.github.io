@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HTML元素 - By whqet</title>
+    <title>HTML文本元素 - By whqet</title>
     <link rel="stylesheet" media="all" href="./css/nodeppt.css">
     <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
     
@@ -21,62 +21,24 @@
 <div class="slides">
     <slides id="container">
         <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
-<h1>HTML元素</h1>
+<h1>HTML文本元素-Text-level semantics</h1>
 <h2>演讲者：whqet</h2>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
 <h2>内容提纲</h2>
 <ol class="rollIn">
-<li>元素概述</li>
-<li>元素类型</li>
-<li>元素分类</li>
+<li>强调</li>
+<li>引用</li>
+<li>格式化文本</li>
+<li>特殊元素</li>
+<li>其他元素</li>
 </ol>
-
-</article></section></slide>
-<slide class="slide" style="background:url(./img/02/html.jpg) left 20% no-repeat; background-size:100%"><section class="slide-wrapper"><article>
-<h2>html简介</h2>
-<blockquote>
-<p>超文本标记语言</p>
-</blockquote>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article>
 <h2><a href="///w3school.com.cn/tags/html_ref_byfunc.asp" target="_blank">元素概述</a></h2>
 <img src="./img/03/Periodic-Table-of-HTML-Elements-large.png" alt="">
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2><a href="///www.w3.org/TR/html/syntax.html#elements-0" target="_blank">元素类型</a></h2>
-<p><table class="thinner tag">
-    <tr>
-        <th>类型</th><th>标签</th>
-    </tr>
-    <tr>
-        <td>空元素<br>Void elements</td>
-        <td>meta, base, link, br, wbr, hr, img, area, col, input,keygen, embed, param, source, track</td>
-    </tr>
-    <tr>
-        <td>原生文本元素<br>Raw text elements</td>
-        <td>script, style</td>
-    </tr>
-    <tr>
-        <td>可回避的原生文本元素<br>escapable raw text elements</td>
-        <td>textarea, title</td>
-    </tr>
-    <tr>
-        <td>外来元素<br>Foreign elements</td>
-        <td>从SVG或MathML中引用的元素</td>
-    </tr>
-    <tr>
-        <td>其他元素<br>Normal elements</td>
-        <td>其他html元素</td>
-    </tr>
-</table></p>
-<blockquote>
-<p>空元素（单标签）中间不能放内容，因为没有结束标签</p>
-</blockquote>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
@@ -130,70 +92,187 @@
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
 
-<h2>html文档类型定义</h2>
-<blockquote>
-<p>DOCTYPE是必须的，如果省略，浏览器可能会使用与标准不兼容的渲染模式。</p>
-</blockquote>
-<pre><code class="html">&lt;!-- html5 --&gt;
-&lt;!DOCTYPE html&gt;
-
-&lt;!-- xhtml 1.1 --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;
-&lt;!-- xhtml 1.0 strict --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
-&lt;!-- xhtml 1.0 transitional --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
-
-&lt;!-- html4.01 --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
-&lt;!-- html4 --&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-</code></pre>
-
-</article></section></slide>
-<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
-
-<h2>html根元素</h2>
+<h2>强调 em strong</h2>
 <table class="thin tag">
     <tr>
         <th>类型</th><th>取值</th>
     </tr>
     <tr>
         <td>分类</td>
-        <td>无</td>
+        <td>流内容-Flow content <br>
+            短句内容-Phrasing content  <br>
+            可感知内容-Palpable content
+        </td>
     </tr>
     <tr>
         <td>元素上下文</td>
-        <td>根元素，没有父对象</td>
+        <td>需要短句内容的地方</td>
     </tr>
     <tr>
         <td>内容模型</td>
-        <td>head元素、body元素</td>
+        <td>短句内容</td>
     </tr>
     <tr>
         <td>属性</td>
-        <td>全局属性、manifest属性(指定描述了文档的缓存信息的URL)</td>
+        <td>
+            全局属性
+        </td>
     </tr>
 </table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>em strong元素示例</h2>
+<pre><code class="html">&lt;em&gt;em默认样式为斜体&lt;/em&gt;
+&lt;strong&gt;strong默认样式为粗体&lt;/strong&gt;
+</code></pre>
+<p><em>em默认样式为斜体</em>
+<strong>strong默认样式为粗体</strong></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>引用 q cite mark</h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>流内容-Flow content <br>
+            短句内容-Phrasing content  <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要短句内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>短句内容</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>
+            全局属性 <br>
+            cite属性，链接引用的资源（q元素的属性）
+        </td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>q cite mark元素示例</h2>
+<pre><code class="html">&lt;p&gt;In the words of &lt;cite&gt;Charles Bukowski&lt;/cite&gt; - 
+&lt;q&gt;An intellectual says a simple thing in a hard way. 
+An artist says a hard thing in a &lt;mark&gt;simple&lt;/mark&gt; way.&lt;/q&gt;&lt;/p&gt;
+</code></pre>
+<img src="./img/08/q.png" alt="">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>格式化文本 i b u s</h2>
+<p><table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>流内容-Flow content <br>
+            短句内容-Phrasing content  <br>
+            可感知内容-Palpable content
+        </td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>需要短句内容的地方</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>短句内容</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>
+            全局属性
+        </td>
+    </tr>
+</table></p>
+<blockquote>
+<p>i u b s等文本格式化元素仅用于表现，不建议使用！</p>
+</blockquote>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>i u b s元素示例</h2>
+<pre><code class="html">&lt;i&gt;斜体文字&lt;/i&gt;
+&lt;u&gt;下划线文字&lt;/u&gt;
+&lt;b&gt;粗体文字&lt;/b&gt;
+&lt;s&gt;删除线文字&lt;/s&gt;
+</code></pre>
+<p><i>斜体文字</i>
+<u>下划线文字</u>
+<b>粗体文字</b>
+<s>删除线文字</s></p>
+
 </article></section></slide>
 <slide class="slide"   data-on-build="Slide.magic" data-on-enter="Slide.magic.init"><section class="slide-wrapper"><article class="flexbox vleft">
 
 <div class="magic"><div class="magicItem current pagedown"  data-transition="fadein"><article>
 <div class="magic-wrapper">
 <article>
-<h2>html根元素示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;!-- lang属性指定网页文档语言 --&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<h2>特殊元素</h2>
+<table>
+<thead>
+<tr>
+<th>元素名</th>
+<th>意义</th>
+<th>示例</th>
+<th>样式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sup</td>
+<td>上标</td>
+<td><code>x&lt;sup&gt;2&lt;/sup&gt;</code></td>
+<td>x<sup>2</sup></td>
+</tr>
+<tr>
+<td>sub</td>
+<td>下标</td>
+<td><code>x&lt;sub&gt;2&lt;/sub&gt;</code></td>
+<td>x<sub>2</sub></td>
+</tr>
+<tr>
+<td>big</td>
+<td>较大的字</td>
+<td><code>一些&lt;big&gt;文字&lt;/big&gt;</code></td>
+<td>一些<big>文字</big></td>
+</tr>
+<tr>
+<td>small</td>
+<td>较小的字</td>
+<td><code>一些&lt;small&gt;文字&lt;/small&gt;</code></td>
+<td>一些<small>文字</small></td>
+</tr>
+<tr>
+<td>var</td>
+<td>变量</td>
+<td><code>一共有&lt;var&gt;n&lt;/var&gt;个项目</code></td>
+<td>一共有<var>n</var>个项目</td>
+</tr>
+<tr>
+<td>code</td>
+<td>代码</td>
+<td><code>当你调用&lt;code&gt;hello()&lt;/code&gt;时，</code></td>
+<td>当你调用<code>hello()</code>时，</td>
+</tr>
+</tbody>
+</table>
 
 </article>
 </div>
@@ -201,36 +280,66 @@
 <div class="magicItem next pagedown"  data-transition="fadein"><article>
 <div class="magic-wrapper">
 <article>
-<h2>html manifest属性示例</h2>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html manifest=&quot;offline.manifest&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;title&gt;HTML5-manifest-sample demo&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheet/HTML5-manifest-sample.css&quot;/&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;content&quot;&gt;&lt;/div&gt;
-  &lt;script src=&quot;javascript/HTML5-manifest-sample.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<pre><code>CACHE MANIFEST
+<h2>特殊元素</h2>
+<table>
+<thead>
+<tr>
+<th>元素名</th>
+<th>意义</th>
+<th>示例</th>
+<th>样式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>samp</td>
+<td>样例</td>
+<td><code>照样例&lt;samp&gt;xx@qq.com&lt;/samp&gt;书写</code></td>
+<td>照样例<samp>xx@qq.com</samp>书写</td>
+</tr>
+<tr>
+<td>kbd</td>
+<td>键盘</td>
+<td><code>快捷键&lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;C&lt;/kbd&gt;</code></td>
+<td>快捷键<kbd>ctrl</kbd>+<kbd>C</kbd></td>
+</tr>
+<tr>
+<td>time</td>
+<td>时间</td>
+<td><code>时间&lt;time&gt;21:24&lt;/time&gt;</code></td>
+<td>时间<time>21:24</time></td>
+</tr>
+<tr>
+<td>dfn</td>
+<td>定义</td>
+<td><code>&lt;dfn&gt;电脑&lt;/dfn&gt;指用电维持运行的脑子。</code></td>
+<td><dfn>电脑</dfn>指用电维持运行的脑子。</td>
+</tr>
+<tr>
+<td>br</td>
+<td>换行</td>
+<td><code>一些&lt;br&gt;文字</code></td>
+<td>一些<br>文字</td>
+</tr>
+<tr>
+<td>wbr</td>
+<td>换行</td>
+<td><code>访问www.simply&lt;wbr&gt;orange&lt;wbr&gt;juice.com</code></td>
+<td>访问www.simply<wbr>orange<wbr>juice.com</td>
+</tr>
+</tbody>
+</table>
 
-CACHE:
-index.html
-javascript/HTML5-manifest-sample.js
-stylesheet/HTML5-manifest-sample.css
-
-NETWORK:
-*
-
-FALLBACK:  
-//offline.html
-</code></pre>
 </article>
 </div>
 </article></div></div>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>其他元素</h2>
+<h3>ruby rb rp rt rtc</h3>
+<h3>bdi bdo</h3>
+
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
 <h1>网页设计与制作</h1>
