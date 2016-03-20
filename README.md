@@ -178,6 +178,7 @@
 ### 软件151 
 1. 24曾丽丽 成功提交[更改](//github.com/zptcsoft/zptcsoft.github.io/pull/126)，获得悬赏分数20分，鼓掌庆贺吧。
 2. 27王瑶 发起很有价值的[Issues](//github.com/zptcsoft/zptcsoft.github.io/issues/135)，平时成绩加5分。
+3. 09陈浩分享[取色软件colorspro](//github.com/zptcsoft/zptcsoft.github.io/issues/136)，喜欢的移步下载。平时成绩加5分，鼓掌庆贺！！
 2. 继续呀，海量分数等你拿。
 
 

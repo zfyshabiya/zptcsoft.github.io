@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HTML文档元数据元素 - By whqet</title>
+    <title>HTML文档元数据和脚本元素 - By whqet</title>
     <link rel="stylesheet" media="all" href="./css/nodeppt.css">
     <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
     
@@ -34,6 +34,8 @@
 <li>base元素</li>
 <li>style元素</li>
 <li>link元素</li>
+<li>script元素和noscript元素</li>
+<li>canvas元素</li>
 </ol>
 
 </article></section></slide>
@@ -429,6 +431,66 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2><a href="https://www.w3.org/TR/html/scripting-1.html#the-script-element" target="_blank">script元素</a></h2>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>元数据内容-Metadata content, 流内容-Flow content</td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>head部分和body部分，body最下方最佳</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>有src属性，内容为空。无src属性，内容为script脚本</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>
+            全局属性 <br>
+            src属性，链接资源地址<br>
+            type属性， 链接资源类型<br>
+            charset属性，链接资源编码方式<br>
+            crossorigin属性，指定元素如何处理交叉源请求<br>
+            async属性， 异步执行脚本<br>
+            defer属性，推迟执行脚本
+        </td>
+    </tr>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>script元素示例</h2>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;script src=&quot;//cdn.bootcss.com/jquery/2.2.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;content&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;//cdn.bootcss.com/jquery-jcrop/0.9.12/js/jquery.Jcrop.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        //do something
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" style="background:url(./img/06/canvas.png) center center no-repeat;background-size:100%"><section class="slide-wrapper"><article>
+<h2>canvas元素</h2>
+<blockquote>
+<p>功能最为强大的html5元素</p>
+</blockquote>
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
