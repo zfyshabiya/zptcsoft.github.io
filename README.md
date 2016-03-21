@@ -61,15 +61,16 @@
 - 浏览器兼容性处理
 
 ## 课程讲义
-1. [课程概述](//zptcsoft.github.io/ppt/01.htm)
-2. [web概述](//zptcsoft.github.io/ppt/02.htm)
-3. [html概述](//zptcsoft.github.io/ppt/03.htm)
-4. [HTML元素](//zptcsoft.github.io/ppt/04.htm)
-5. [HTML属性](//zptcsoft.github.io/ppt/05.htm)
-6. [HTML文档元数据和脚本元素](//zptcsoft.github.io/ppt/06.htm)
-7. [HTML节点元素](//zptcsoft.github.io/ppt/07.htm)
-8. [HTML文本元素](//zptcsoft.github.io/ppt/08.htm)
-9. [HTML图像元素](//zptcsoft.github.io/ppt/09.htm)
+01. [课程概述](//zptcsoft.github.io/ppt/01.htm)
+02. [web概述](//zptcsoft.github.io/ppt/02.htm)
+03. [html概述](//zptcsoft.github.io/ppt/03.htm)
+04. [HTML元素](//zptcsoft.github.io/ppt/04.htm)
+05. [HTML属性](//zptcsoft.github.io/ppt/05.htm)
+06. [HTML文档元数据和脚本元素](//zptcsoft.github.io/ppt/06.htm)
+07. [HTML节点元素](//zptcsoft.github.io/ppt/07.htm)
+08. [HTML文本元素](//zptcsoft.github.io/ppt/08.htm)
+09. [HTML图像元素](//zptcsoft.github.io/ppt/09.htm)
+10. [HTML链接](//zptcsoft.github.io/ppt/10.htm)
 
 ## 课程资源
 1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。
