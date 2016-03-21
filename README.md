@@ -193,7 +193,9 @@
 4. 03单超艺、10周冰婕创建[分享帖](//github.com/zptcsoft/zptcsoft.github.io/issues/121)，平时成绩各加5分。
 5. 30毛杰就Github Desktop使用问题进行[提问](//github.com/zptcsoft/zptcsoft.github.io/issues/130)，平时成绩加5分，Fighting，少年！
 6. 10周冰婕参与[Issues讨论](//github.com/zptcsoft/zptcsoft.github.io/issues/135)，回答基本正确，平时成绩加5分，大家积极讨论吧。
-6. 海量分数等着你。
+7. 10周冰婕创建**Pull Request**成功，领导悬赏分20分，平时成绩加20分。大家加油。
+8. 01余家宝创建[提问](//github.com/zptcsoft/zptcsoft.github.io/issues/137)，平时成绩加5分，03单超艺创建[Issues](//github.com/zptcsoft/zptcsoft.github.io/issues/138)，平时成绩加5分。
+9. come on!!!!
 
 
 
