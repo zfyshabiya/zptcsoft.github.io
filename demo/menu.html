@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .menu {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        height: 240px;
+        transition: all .5s;
+    }
+    
+    .menu li {
+        -webkit-flex: 1 1 40px;
+        -ms-flex: 1 1 40px;
+        flex: 1 1 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #aaa;
+        list-style: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .menu li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    @media (min-width: 480px) {
+        .menu {
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            height: auto;
+        }
+        .menu li {
+            -webkit-flex-basis: 50%;
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .menu {
+            -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        }
+        .menu li {
+            -webkit-flex: 1 1 120px;
+            -ms-flex: 1 1 120px;
+            flex: 1 1 120px;
+            border-right: 1px solid #ddd;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        .menu {
+            width: 1000px;
+            margin: auto;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">企业简介</a></li>
+        <li><a href="#">产品服务</a></li>
+        <li><a href="#">解决方案</a></li>
+        <li><a href="#">服务流程</a></li>
+        <li><a href="#">联系我们</a></li>
+    </div>
+</body>
+</html>
