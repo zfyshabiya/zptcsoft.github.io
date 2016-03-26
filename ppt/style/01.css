@@ -15,3 +15,25 @@
 	width: 240px;
 	font-weight:normal;
 }
+.widder{
+	min-height: 760px;
+}
+table[border="1"]{
+	width: 100%;
+	border-collapse: collapse;
+    border: 1px solid #000;
+}
+table[border="1"] caption{
+	margin: .4em 0;
+}
+table[border="1"] thead th{
+	background:rgba(255,255,255,.2);
+}
+table[border="1"] tr{
+	background: none;
+}
+table[border="1"] th,table[border="1"] td{
+	padding: .2em .5em;
+	border: 1px solid #000;
+	text-align: center;
+}
