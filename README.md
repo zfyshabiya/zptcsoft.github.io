@@ -71,6 +71,8 @@
 08. [HTML文本元素](//zptcsoft.github.io/ppt/08.htm)
 09. [HTML图像元素](//zptcsoft.github.io/ppt/09.htm)
 10. [HTML链接](//zptcsoft.github.io/ppt/10.htm)
+11. [HTML链接](//zptcsoft.github.io/ppt/11.htm)
+12. [HTML表格](//zptcsoft.github.io/ppt/12.htm)
 
 ## 课程资源
 1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。

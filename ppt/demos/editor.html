@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Frames</title>
+		<!-- split pane -->
+		<link rel="stylesheet" href="lib/split-pane/split-pane.css" />
+		<link rel="stylesheet" href="lib/split-pane/pretty-split-pane.css" />
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/split-pane/split-pane.min.js"></script>
+		<!-- codemirror -->
+		<!-- CodeMirror dependencies -->
+	    <link rel="stylesheet" href="lib/codemirror/lib/codemirror.css" />
+
+	    <script src="lib/codemirror/lib/codemirror.js"></script>
+	    <script src="lib/codemirror/addon/edit/matchbrackets.js"></script>
+	    <script src="lib/codemirror/mode/xml/xml.js"></script>
+	    <script src="lib/codemirror/mode/javascript/javascript.js"></script>
+	    <script src="lib/codemirror/mode/css/css.js"></script>
+	    <script src="lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+	    <script src="lib/codemirror/addon/search/searchcursor.js"></script>
+	    <script src="lib/codemirror/addon/search/search.js"></script>
+	    <script src="lib/codemirror/addon/selection/active-line.js"></script>
+		
+	    <link rel="stylesheet" href="lib/codemirror/theme/monokai.css" />
+
+		<style type="text/css">
+			html, body {
+				height: 100%;
+				min-height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			.vertical-percent #left-component {
+				right: 50%;
+				margin-right: 5px;
+			}
+			.vertical-percent #my-divider {
+				right: 50%;
+				width: 5px;
+			}
+			.vertical-percent #right-component {
+				width: 50%;
+				padding: 0;
+			}
+			textarea,.CodeMirror{
+				width: 100%;
+				height: 100%;
+				font-size: 1.5em;
+			}
+			#preview,#code {
+			    background-color: white;
+			    background-image: none;
+			    width: 100%;
+			    height: 98%;
+			    overflow: auto;
+			    border: none;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="pretty-split-pane-frame">
+			<div class="split-pane vertical-percent">
+				<div class="split-pane-component" id="left-component">
+					<div class="pretty-split-pane-component-inner">
+						<textarea></textarea>
+					</div>
+				</div>
+				<div class="split-pane-divider" id="my-divider"></div>
+				<div class="split-pane-component" id="right-component">
+					<div class="pretty-split-pane-component-inner">
+						<iframe id="preview" sandbox="allow-popups allow-scripts allow-pointer-lock allow-forms"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="lib/emmet.js"></script>
+		<script src="lib/htmleditor.js"></script>
+	</body>
+</html>
