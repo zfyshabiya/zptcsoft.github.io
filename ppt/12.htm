@@ -44,7 +44,7 @@
 <h3>表格不再用于布局页面，用于呈现网页数据</h3>
 <h3>表格呈现多维的结构性数据</h3>
 <h3>信息的可视化趋势，图化、表化</h3>
-<img src="\img\12\table.png" alt="">
+<img src="./img/12/table.png" alt="">
 
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
@@ -466,6 +466,88 @@
 </article>
 </div>
 </article></div></div>
+</article></section></slide>
+<slide class="slide"   data-on-build="Slide.magic" data-on-enter="Slide.magic.init"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<div class="magic"><div class="magicItem current pagedown"  data-transition="fadeIn"><article>
+<div class="magic-wrapper">
+<article>
+<h2>colgroup元素</h2>
+<h3>为表格中一个或多个列定义属性值</h3>
+<table class="thin tag">
+    <tr>
+        <th>类型</th><th>取值</th>
+    </tr>
+    <tr>
+        <td>分类</td>
+        <td>无</td>
+    </tr>
+    <tr>
+        <td>元素上下文</td>
+        <td>table元素的子元素，caption之后，thead\tfoot\tbody、tr之前</td>
+    </tr>
+    <tr>
+        <td>内容模型</td>
+        <td>col元素</td>
+    </tr>
+    <tr>
+        <td>属性</td>
+        <td>
+            全局属性 <br>
+            span属性，该元素横跨的列数
+        </td>
+    </tr>
+</table>
+</article>
+</div>
+</article></div>
+<div class="magicItem next pagedown"  data-transition="fadeIn"><article>
+<div class="magic-wrapper">
+<article>
+<h3>colgroup元素示例</h3>
+<pre><code class="html">&lt;table width=&quot;100%&quot; border=&quot;1&quot;&gt;
+    &lt;col style=&quot;background:none;&quot;&gt;
+    &lt;colgroup span=&quot;2&quot; style=&quot;background:rgba(0,0,100,.2);&quot;&gt;&lt;/colgroup&gt;
+    &lt;tr&gt;
+        &lt;th&gt;ISBN&lt;/th&gt;
+        &lt;th&gt;Title&lt;/th&gt;
+        &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3476896&lt;/td&gt;
+        &lt;td&gt;My first HTML&lt;/td&gt;
+        &lt;td&gt;$53&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<table width="100%" border="1">
+    <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 70%;">
+       <col span="1" style="width: 15%;">
+    </colgroup>
+    <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+    </tr>
+</table>
+</article>
+</div>
+</article></div></div>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>表格综合实例</h2>
+<h3><a href="demos/editor.html?file=table01" target="_blank">细线表格</a></h3>
+<h3><a href="demos/editor.html?file=table01" target="_blank">隔行变色表格</a></h3>
+<h3><a href="demos/editor.html?file=table01" target="_blank">十字变色表格</a></h3>
+
 </article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
 <h1>网页设计与制作</h1>
