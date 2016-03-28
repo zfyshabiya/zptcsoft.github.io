@@ -22,73 +22,76 @@
     <script src="lib/codemirror/addon/search/search.js"></script>
     <script src="lib/codemirror/addon/selection/active-line.js"></script>
     <link rel="stylesheet" href="lib/codemirror/theme/monokai.css" />
+    <!-- <link rel="stylesheet" href="lib/codemirror/theme/mdn-like.css" /> -->
     <style type="text/css">
     html,
     body {
         height: 100%;
-        min-height: 100%;
+        min-height: 90%;
         margin: 0;
         padding: 0;
     }
     .vertical-percent #left-component {
         right: 50%;
-        margin-right: 5px;
+        margin-right: 2px;
     }
     
     .vertical-percent #my-divider {
         right: 50%;
-        width: 5px;
+        width: 2px;
     }
     
     .vertical-percent #right-component {
         width: 50%;
         padding: 0;
+        overflow-y: hidden;
     }
     
-    textarea,
+    #editor{
+        height: 100%;
+        overflow: hidden;
+    }
     .CodeMirror {
         width: 100%;
         height: 100%;
         font-size: 1.5em;
     }
     
-    #preview,
-    #code {
+    #preview{
         background-color: white;
         background-image: none;
         width: 100%;
-        height: 100%;
+        height: 98%;
         overflow: auto;
         border: none;
     }
-    #downBtn{
+    .btn{
         position: absolute;
-        right: 2px;
         top: 2px;
         z-index: 1000;
         background-color:rgba(255,255,255,.1);
         color: rgba(255,0,100,.8);
         text-decoration: none;
-        width: 60px;
-        height: 32px;
+        width: 40px;
+        height: 28px;
         text-align: center;
-        line-height: 32px;
+        line-height: 28px;
         border-left: 1px solid rgba(100,100,100,.4);
+        border-bottom: 1px solid rgba(100,100,100,.4);
+        font-size: 15px;
+    }
+    #themeBtn{
+        right: 82px;
+    }
+    #downBtn{
+        right: 2px;
     }
     #openBtn{
         opacity: 0;
+        display: none;
     }
     #openBtnLabel{
-        position: absolute;
-        right: 62px;
-        top: 2px;
-        z-index: 1000;
-        background-color:rgba(255,255,255,.1);
-        width: 60px;
-        height: 32px;
-        text-align: center;
-        line-height: 32px;
-        color: rgba(255,0,100,.8);
+        right: 42px;
         cursor: pointer;
     }
     </style>
@@ -100,8 +103,9 @@
             <div class="split-pane-component" id="left-component">
                 <div class="pretty-split-pane-component-inner">
                     <textarea id="editor"></textarea>
-                    <a href="#" id="downBtn" download="">下载</a>
-                    <label id="openBtnLabel" for="openBtn">本地</label>
+                    <a href="#" class="btn black" id="themeBtn">白色</a>
+                    <a href="#" class="btn" id="downBtn" download="">下载</a>
+                    <label class="btn" id="openBtnLabel" for="openBtn">本地</label>
                     <input type="file" name="openBtn" id="openBtn">
                 </div>
             </div>

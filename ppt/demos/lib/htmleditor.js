@@ -3,6 +3,7 @@ var emmetSupport=true,
     previewer=$("#preview"),
     downBtn=$("#downBtn"),
     openBtn=$("#openBtn"),
+    themeBtn=$("#themeBtn"),
     fileParam = getUrlParam('file'),
     codeMirror;
 
@@ -85,5 +86,15 @@ openBtn.change(function(event) {
             codeMirror.setValue(this.result);
             changeEditor();
         });
+    }
+});
+
+themeBtn.click(function(event) {
+    if ($(this).hasClass('black')) {
+        $(this).text('黑色').removeClass('black');
+        codeMirror.setOption('theme','default');
+    } else {
+        $(this).text('白色').addClass('black');
+        codeMirror.setOption('theme','monokai');
     }
 });
