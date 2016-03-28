@@ -71,13 +71,13 @@
 08. [HTML文本元素](//zptcsoft.github.io/ppt/08.htm)
 09. [HTML图像元素](//zptcsoft.github.io/ppt/09.htm)
 10. [HTML链接](//zptcsoft.github.io/ppt/10.htm)
-11. [HTML链接](//zptcsoft.github.io/ppt/11.htm)
+11. [HTML列表](//zptcsoft.github.io/ppt/11.htm)
 12. [HTML表格](//zptcsoft.github.io/ppt/12.htm)
 
 ## 课程资源
 1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。
-2.  [html标签参考手册](http://www.w3school.com.cn/tags/html_ref_byfunc.asp), [html 参考手册官方英文](https://www.w3.org/TR/html-markup/), [html5元素周期表](http://zptcsoft.github.io/html5-elements-periodic-table/)
-3.  [css3手册在线版](//css.doyoe.com/)，[css3手册下载](//css.doyoe.com/css.chm)
+2.  [html标签参考手册](http://www.w3school.com.cn/tags/html_ref_byfunc.asp), [html 参考手册官方英文](https://www.w3.org/TR/html-markup/), [html5元素周期表](//zptcsoft.github.io/html5-elements-periodic-table/)
+3.  [css3手册在线版](//css.doyoe.com/)，[css3手册下载](//css.doyoe.com/css.chm)，[css手册本地版](//zptcsoft.github.io/css3/)
 4.  史上最性感的编辑器-[**sublimetext**](www.sublimetext.com/)，[安装步骤](soft/01install sublime_text.md)，**sublime text常用插件集成版** [百度网盘下载](//pan.baidu.com/s/1nubND8l)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/01Sublime%20Text%202.0.2%20x64.rar), [学习资源](//www.jianshu.com/p/d1b9a64e2e37)。
 5.  **GithubDesktop安装**，首先安装[**.net Framework 4.5**](//www.microsoft.com/zh-cn/download/details.aspx?id=30653), 其次解压缩安装**Github Desktop**[百度网盘下载](//pan.baidu.com/s/1i4bVR4T)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/02Github%20Desktop.rar)。
 6. [Github Desktop使用教程](https://github.com/zptcsoft/zptcsoft.github.io/blob/master/soft/02HowToUseGithubDesktop.md), [Pull Request教程](), [廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
