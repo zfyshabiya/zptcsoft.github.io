@@ -61,6 +61,36 @@
         overflow: auto;
         border: none;
     }
+    #downBtn{
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        z-index: 1000;
+        background-color:rgba(255,255,255,.1);
+        color: rgba(255,0,100,.8);
+        text-decoration: none;
+        width: 60px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        border-left: 1px solid rgba(100,100,100,.4);
+    }
+    #openBtn{
+        opacity: 0;
+    }
+    #openBtnLabel{
+        position: absolute;
+        right: 62px;
+        top: 2px;
+        z-index: 1000;
+        background-color:rgba(255,255,255,.1);
+        width: 60px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        color: rgba(255,0,100,.8);
+        cursor: pointer;
+    }
     </style>
 </head>
 
@@ -70,6 +100,9 @@
             <div class="split-pane-component" id="left-component">
                 <div class="pretty-split-pane-component-inner">
                     <textarea id="editor"></textarea>
+                    <a href="#" id="downBtn" download="">下载</a>
+                    <label id="openBtnLabel" for="openBtn">本地</label>
+                    <input type="file" name="openBtn" id="openBtn">
                 </div>
             </div>
             <div class="split-pane-divider" id="my-divider"></div>

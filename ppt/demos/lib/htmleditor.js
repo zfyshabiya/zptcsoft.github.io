@@ -1,6 +1,8 @@
 var emmetSupport=true,
     texteditor=$("#editor"),
     previewer=$("#preview"),
+    downBtn=$("#downBtn"),
+    openBtn=$("#openBtn"),
     fileParam = getUrlParam('file'),
     codeMirror;
 
@@ -8,6 +10,7 @@ var emmetSupport=true,
 $('div.split-pane').splitPane();
 
 //CodeMirror实现编辑和预览
+
 //获取url地址的参数
 function getUrlParam(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
@@ -15,12 +18,13 @@ function getUrlParam(name) {
     if (r != null) return unescape(r[2]);
     return null; //返回参数值
 }
-function createScript(jsUrl){
-  var body = document.getElementsByTagName('body')[0];
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = jsUrl;
-  body.appendChild(script);
+//下载功能实现
+var createURL = function() {
+    var blob = new Blob([codeMirror.getValue()], {
+        type: 'text/html'
+    });
+
+    downBtn.attr('href', window.URL.createObjectURL(blob));
 }
 
 function initEditor(){
@@ -31,9 +35,11 @@ function initEditor(){
         theme: 'monokai'
     });
     if (emmetSupport) {
-        createScript("lib/emmet.js");
         emmetCodeMirror(codeMirror);
     }
+}
+
+function changeEditor(){
     codeMirror.on('change', setPreview);
     setPreview();
 }
@@ -42,6 +48,7 @@ function setPreview() {
     requestAnimationFrame(function() {
         previewer[0].srcdoc = codeMirror.getValue();
     });
+    createURL();
 }
 
 function getEditorData(){
@@ -52,15 +59,31 @@ function getEditorData(){
         $.ajax({
             url: fileUrl,
             success: function(data) {
-                texteditor[0].value = data;
-                initEditor();
+                codeMirror.setValue(data);
+                downBtn.attr('download', fileParam+'.html');
+                changeEditor();
             }
         });
 
     } else {
-        texteditor[0].value = "!";
-        initEditor();
+        codeMirror.setValue("!");
+        changeEditor();
     }
 }
 
+initEditor();
 getEditorData();
+
+openBtn.change(function(event) {
+    var file = this.files[0],
+        reader = new FileReader();
+
+    if (file) {
+        downBtn.attr('download', file.name);
+        reader.readAsText(file);
+        reader.addEventListener('load', function() {
+            codeMirror.setValue(this.result);
+            changeEditor();
+        });
+    }
+});
