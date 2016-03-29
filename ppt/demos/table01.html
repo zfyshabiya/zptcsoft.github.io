@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>细线表格</title>
     <style>
-		.thin{
-			width: 480px;
-			border-collapse: collapse;
-			border: 1px solid rgba(0,0,0,.5);
-		}
-		.thin td, .thin th{
-			border: 1px solid rgba(0,0,0,.5);
-			text-align: center;
-		}
+    .thin {
+        width: 480px;
+        border-collapse: collapse;
+        border: 1px solid rgba(0, 0, 0, .2);
+    }
+    
+    .thin th {
+        background-color: rgba(0, 0, 200, .3);
+        color: rgba(255, 255, 255, .9);
+    }
+    
+    .thin td,
+    .thin th {
+        border: 1px solid rgba(0, 0, 0, .2);
+        text-align: center;
+        padding: 5px;
+    }
+    td:last-child{
+        text-align: left;
+        color: rgba(0,0,0,.2);
+    }
     </style>
 </head>
 
