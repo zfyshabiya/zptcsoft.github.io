@@ -73,6 +73,7 @@
 10. [HTML链接](//zptcsoft.github.io/ppt/10.htm)
 11. [HTML列表](//zptcsoft.github.io/ppt/11.htm)
 12. [HTML表格](//zptcsoft.github.io/ppt/12.htm)
+13. [CSS初步](//zptcsoft.github.io/ppt/13.htm)
 
 ## 课程资源
 1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。
