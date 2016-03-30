@@ -72,8 +72,10 @@
 09. [HTML图像元素](//zptcsoft.github.io/ppt/09.htm)
 10. [HTML链接](//zptcsoft.github.io/ppt/10.htm)
 11. [HTML列表](//zptcsoft.github.io/ppt/11.htm)
-12. [HTML表格](//zptcsoft.github.io/ppt/12.htm)
+12. [HTML表格](//zptcsoft.github.io/ppt/12.htm)  [表格实验](//zptcsoft.github.io/ppt/demos/table.html)
 13. [CSS初步](//zptcsoft.github.io/ppt/13.htm)
+14. [CSS选择器](//zptcsoft.github.io/ppt/14.htm)
+15. [css边框](//zptcsoft.github.io/ppt/14.htm) [border实验](//zptcsoft.github.io/ppt/demos/border.html)
 
 ## 课程资源
 0.  自制[在线html编辑器](//zptcsoft.github.io/ppt/demos/editor.html)。
