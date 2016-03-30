@@ -76,6 +76,7 @@
 13. [CSS初步](//zptcsoft.github.io/ppt/13.htm)
 
 ## 课程资源
+0.  自制[在线html编辑器](//zptcsoft.github.io/demos/editor.html)。
 1.  著名常用web学习网站[w3school](//www.w3school.com.cn/)，入门必备。
 2.  [html标签参考手册](http://www.w3school.com.cn/tags/html_ref_byfunc.asp), [html 参考手册官方英文](https://www.w3.org/TR/html-markup/), [html5元素周期表](//zptcsoft.github.io/html5-elements-periodic-table/)
 3.  [css3手册在线版](//css.doyoe.com/)，[css3手册下载](//css.doyoe.com/css.chm)，[css手册本地版](//zptcsoft.github.io/css3/)
