@@ -64,7 +64,7 @@
 01. [课程概述](//zptcsoft.github.io/ppt/01.htm)
 02. [web概述](//zptcsoft.github.io/ppt/02.htm)
 03. [html概述](//zptcsoft.github.io/ppt/03.htm)
-04. [HTML元素](//zptcsoft.github.io/ppt/04.htm)
+04. [HTML元素](//zptcsoft.github.io/ppt/04.htm)--[html5元素周期表](//zptcsoft.github.io/html5-elements-periodic-table/)
 05. [HTML属性](//zptcsoft.github.io/ppt/05.htm)
 06. [HTML文档元数据和脚本元素](//zptcsoft.github.io/ppt/06.htm)
 07. [HTML节点元素](//zptcsoft.github.io/ppt/07.htm)
@@ -72,10 +72,10 @@
 09. [HTML图像元素](//zptcsoft.github.io/ppt/09.htm)
 10. [HTML链接](//zptcsoft.github.io/ppt/10.htm)
 11. [HTML列表](//zptcsoft.github.io/ppt/11.htm)
-12. [HTML表格](//zptcsoft.github.io/ppt/12.htm)  [table实验](//zptcsoft.github.io/ppt/demos/table.html)
+12. [HTML表格](//zptcsoft.github.io/ppt/12.htm)--[table实验](//zptcsoft.github.io/ppt/demos/table.html)
 13. [CSS初步](//zptcsoft.github.io/ppt/13.htm)
 14. [CSS选择器](//zptcsoft.github.io/ppt/14.htm)
-15. [css边框](//zptcsoft.github.io/ppt/14.htm) [border实验](//zptcsoft.github.io/ppt/demos/border.html)
+15. [css边框](//zptcsoft.github.io/ppt/14.htm)--[border实验](//zptcsoft.github.io/ppt/demos/border.html)
 
 ## 课程资源
 0.  自制[在线html编辑器](//zptcsoft.github.io/ppt/demos/editor.html)。
