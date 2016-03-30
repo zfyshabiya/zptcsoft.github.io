@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>表格属性试验场</title>
+		<title>border属性试验场</title>
 		<link rel="stylesheet" href="lib/angular/angular-material.css">
 		<style type="text/css">
 			body {
@@ -18,6 +18,10 @@
 			.show {
 				padding: 10px;
 			}
+			.show .demo{
+				width: 200px;
+				height: 200px;
+			}
 		</style>
 	</head>
 
@@ -27,12 +31,12 @@
 				<h2>控制区</h2>
 				<p>测试border属性用法</p>
 				<div layout="row" layout-align="center center">
-					<div flex="40">border-width: {{width}}%</div>
+					<div flex="40">border-width: {{width}}</div>
 					<md-slider flex="60" min="0" max="100" ng-model="width" aria-label="width"></md-slider>
 				</div>
 				<div layout="row" layout-align="center center">
 					<div flex="40">border-style: {{style}}</div>
-					<md-select flex="60" ng-model="frame" aria-label="align">
+					<md-select flex="60" ng-model="style" aria-label="align">
 						<md-option>none</md-option>
 						<md-option>hidden</md-option>
 						<md-option>dotted</md-option>
@@ -46,14 +50,25 @@
 					</md-select>
 				</div>
 				<div layout="row" layout-align="center center">
-					<div flex="40">color: {{color}}</div>
-					<input type="color" ng-model="color">
+					<div flex="40">border-color: {{color}}</div>
+					<md-select flex="60" ng-model="color" aria-label="align">
+						<md-option>black</md-option>
+						<md-option>red</md-option>
+						<md-option>green</md-option>
+						<md-option>blue</md-option>
+						<md-option>pink</md-option>
+						<md-option>orange</md-option>
+						<md-option>purple</md-option>
+						<md-option>fuchsia</md-option>
+						<md-option>yellow</md-option>
+						<md-option>teal</option>
+					</md-select>
 				</div>
 			</div>
 			<div class="show" flex="70" layout="column">
 				<h2>预览区</h2>
 				<p>拖动滑动条之后，在这里预览表格变化</p>
-				<div style="border-width:{{width}};border-style:{{style}};border-color:{{color}}">
+				<div class="demo" style="border-width:{{width}}px;border-style:{{style}};border-color:{{color}}">
 				</div>
 			</div>
 		</div>
@@ -70,7 +85,10 @@
 			// Declare the AppCtrl controller
 			app
 				.controller('AppCtrl', ['$scope', function($scope) {
-					$scope.width = 2; // %
+					$scope.width = 2; //px
+					$scope.style = 'solid';
+					$scope.color = 'black';
+
 				}]);
 		</script>
 	</body>
