@@ -86,7 +86,8 @@
 5.  **GithubDesktop安装**，首先安装[**.net Framework 4.5**](//www.microsoft.com/zh-cn/download/details.aspx?id=30653), 其次解压缩安装**Github Desktop**[百度网盘下载](//pan.baidu.com/s/1i4bVR4T)、[课程资源下载](//github.com/zptcsoft/zptcsoft.github.io/raw/dev/soft/02Github%20Desktop.rar)。
 6. [Github Desktop使用教程](https://github.com/zptcsoft/zptcsoft.github.io/blob/master/soft/02HowToUseGithubDesktop.md), [Pull Request教程](), [廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 7.  网站制作[视频教程](http://v.dxsbb.com/topiclist/wangzhan.html)， 请大家帮忙整理网络系列学习教程。
-8.  采色软件colorspro[软件下载](http://pan.baidu.com/s/1eRvaJj8)，截屏软件FSCapture[网页下载](http://cy.cr173.com/fscapture_gr.zip)，[网盘下载](http://pan.baidu.com/s/1i39tjDj)，密码：7lpr。
+8. 采色软件colorspro[软件下载](http://pan.baidu.com/s/1eRvaJj8)，截屏软件FSCapture[网页下载](http://cy.cr173.com/fscapture_gr.zip)，[网盘下载](http://pan.baidu.com/s/1i39tjDj)，密码：7lpr。
+9. 期中考试[链接](http://zptcweb.github.io/book.html)，请大家抄网页练习。
 
 ## 学友链接
 ### 软件151
@@ -214,7 +215,7 @@
 10. 27黄荣基在Issues提问问题，平时成绩加5分。
 11. 09陈猛在Issues提问问题，平时成绩加5分。
 12. 23江俊杰**江老师**讲解的非常好，**免考！！**
-9. come on!!!!
+100. come on!!!!
 
 ## 知识分享
 本活动自愿参与，请同学预先学习某个知识点，然后上课的时候**当老师**把学习的成果讲解给大家，目的有二，一是鼓励自学，二是锻炼胆量。
@@ -230,6 +231,7 @@
 8. 王永琪
 9. 徐浩鹏
 10 姚文辉
+100. 等你
 
 ### 软件152
 1. *江俊杰*
@@ -237,3 +239,4 @@
 3. 陈猛
 4. 余家宝
 5. 吴昊
+100. 等你
