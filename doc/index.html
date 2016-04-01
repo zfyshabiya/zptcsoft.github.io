@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>平时成绩</title>
+    <link rel="stylesheet" type="text/css" href="lib/angular-object-table/build/object-table-style.css">
+
+<script type="text/javascript" src="lib/angular-object-table/build/object-table.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <table  object-table
+	from-url = "http://beta.json-generator.com/api/json/get/DXXROxj"
+	data = "exportDataVariable"
+	display = "10"
+	headers = "Name, Eye color, Age,Balance,Company,Favorite Fruit"
+	fields = "name,eyeColor,age,balance,company,favoriteFruit"
+	sorting = "compound"
+	editable = "true"
+	resize="true"
+	drag-columns="true">
+		
+	</table>		
+</body>
+
+</html>
