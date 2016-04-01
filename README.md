@@ -193,6 +193,10 @@
 2. 27王瑶 发起很有价值的[Issues](//github.com/zptcsoft/zptcsoft.github.io/issues/135)，平时成绩加5分。
 3. 09陈浩分享[取色软件colorspro](//github.com/zptcsoft/zptcsoft.github.io/issues/136)，喜欢的移步下载。平时成绩加5分，鼓掌庆贺！！
 4. 24曾丽丽Issuse里提问问题颇有深度， 31徐道聪Github使用提出问题，平时成绩各加5分。
+5. 27号王瑶在悬赏贴提交信息，平时成绩加5分。
+6. 31徐道聪Github使用提出两个[问题](//github.com/zptcsoft/zptcsoft.github.io/issues/155),[问题](//github.com/zptcsoft/zptcsoft.github.io/issues/158)，平时成绩各加5分。
+7. 27号王瑶Issues提交[问题](//github.com/zptcsoft/zptcsoft.github.io/issues/159)，平时成绩加10分。
+8. 27号王瑶**王老师**讲得很好，**免考！！**
 100. 继续呀，海量分数等你拿。
 
 
@@ -205,6 +209,10 @@
 6. 10周冰婕参与[Issues讨论](//github.com/zptcsoft/zptcsoft.github.io/issues/135)，回答基本正确，平时成绩加5分，大家积极讨论吧。
 7. 10周冰婕创建**Pull Request**成功，领导悬赏分20分，平时成绩加20分。大家加油。
 8. 01余家宝创建[提问](//github.com/zptcsoft/zptcsoft.github.io/issues/137)，平时成绩加5分，03单超艺创建[Issues](//github.com/zptcsoft/zptcsoft.github.io/issues/138)，平时成绩加5分。
+9. 34张奎骁、06周陈在悬赏贴发帖，平时成绩个加10分。
+10. 27黄荣基在Issues提问问题，平时成绩加5分。
+11. 09陈猛在Issues提问问题，平时成绩加5分。
+12. 23江俊杰**江老师**讲解的非常好，**免考！！**
 9. come on!!!!
 
 
