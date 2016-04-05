@@ -1,0 +1,9 @@
+.object-table thead>tr th,.object-table tr td{
+	text-align: center;
+}
+.object-table caption{
+	display: block;
+}
+.object-table tr.active{
+	background-color: #080;
+}

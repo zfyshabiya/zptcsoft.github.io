@@ -1,29 +1,101 @@
 <!DOCTYPE html>
-<html>
-
+<html ng-app="test">
 <head>
     <meta charset="UTF-8">
     <title>平时成绩</title>
-    <link rel="stylesheet" type="text/css" href="lib/angular-object-table/build/object-table-style.css">
-
-<script type="text/javascript" src="lib/angular-object-table/build/object-table.js"></script>
-
-<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/object-table/object-table-style.css">
+    <link rel="stylesheet" type="text/css" href="lib/object-table/themes/blue-dust.css">
+    <link rel="stylesheet" href="lib/data.css">
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/object-table/object-table.js"></script>
 </head>
-
-<body>
-    <table  object-table
-	from-url = "http://beta.json-generator.com/api/json/get/DXXROxj"
-	data = "exportDataVariable"
-	display = "10"
-	headers = "Name, Eye color, Age,Balance,Company,Favorite Fruit"
-	fields = "name,eyeColor,age,balance,company,favoriteFruit"
-	sorting = "compound"
-	editable = "true"
-	resize="true"
-	drag-columns="true">
-		
-	</table>		
+<body ng-controller="mainController">
+    <table 
+    class="grade" 
+    object-table 
+    data="data1" 
+    display="18" 
+    headers="学号,姓名,免考1,免考2,免考3,
+             作业1,作业2,作业3,作业4,作业5,
+             作业6,作业7,作业8,作业9,作业10,
+            动态成绩,平时成绩,期中考试,期末考试,总评成绩" 
+    fields="id, name, preExam1, preExam2, preExam3, 
+            work01, work02, work03, work04, work05, 
+            work06, work07, work08, work09, work10,
+            github, grade01, grade02, grade03, grade04" 
+    paging="true"
+    sorting="simple"  
+    search="true">
+    <caption>软件151平时成绩表</caption>
+        <tbody>
+            <tr>
+            	<td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.preExam1}}</td>
+                <td>{{item.preExam2}}</td>
+                <td>{{item.preExam3}}</td>
+                <td>{{item.work01}}</td>
+                <td>{{item.work02}}</td>
+                <td>{{item.work03}}</td>
+                <td>{{item.work04}}</td>
+                <td>{{item.work05}}</td>
+                <td>{{item.work06}}</td>
+                <td>{{item.work07}}</td>
+                <td>{{item.work08}}</td>
+                <td>{{item.work09}}</td>
+                <td>{{item.work10}}</td>
+                <td>{{item.github}}</td>
+                <td>{{item.grade01}}</td>
+                <td>{{item.grade02}}</td>
+                <td>{{item.grade03}}</td>
+                <td>{{item.grade04}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table 
+    class="grade" 
+    object-table 
+    data="data2" 
+    display="18" 
+    headers="学号,姓名,免考1,免考2,免考3,
+             作业1,作业2,作业3,作业4,作业5,
+             作业6,作业7,作业8,作业9,作业10,
+            动态成绩,平时成绩,期中考试,期末考试,总评成绩" 
+    fields="id, name, preExam1, preExam2, preExam3, 
+            work01, work02, work03, work04, work05, 
+            work06, work07, work08, work09, work10,
+            github, grade01, grade02, grade03, grade04" 
+    paging="true"
+    sorting="simple"  
+    search="true">
+    <caption>软件152平时成绩表</caption>
+        <tbody>
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.preExam1}}</td>
+                <td>{{item.preExam2}}</td>
+                <td>{{item.preExam3}}</td>
+                <td>{{item.work01}}</td>
+                <td>{{item.work02}}</td>
+                <td>{{item.work03}}</td>
+                <td>{{item.work04}}</td>
+                <td>{{item.work05}}</td>
+                <td>{{item.work06}}</td>
+                <td>{{item.work07}}</td>
+                <td>{{item.work08}}</td>
+                <td>{{item.work09}}</td>
+                <td>{{item.work10}}</td>
+                <td>{{item.github}}</td>
+                <td>{{item.grade01}}</td>
+                <td>{{item.grade02}}</td>
+                <td>{{item.grade03}}</td>
+                <td>{{item.grade04}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="lib/data.js"></script>
 </body>
-
 </html>
