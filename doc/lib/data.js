@@ -12,7 +12,7 @@ angular.module('test', ['objectTable'])
           work01: 0, work02: 0, work03: 0, work04: 0, 
           work05: 0, work06: 0, work07: 0, work08: 0, 
           work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0
+          grade02:78, grade03:0
         },
         { id: 2, 
           name: "李明豪", 
@@ -20,7 +20,7 @@ angular.module('test', ['objectTable'])
           work01: 0, work02: 0, work03: 0, work04: 0, 
           work05: 0, work06: 0, work07: 0, work08: 0, 
           work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:80, grade03:0 
         },
         { id: 4,
           name: "尹飞燕", 
@@ -28,7 +28,7 @@ angular.module('test', ['objectTable'])
           work01: 0, work02: 0, work03: 0, work04: 0, 
           work05: 0, work06: 0, work07: 0, work08: 0, 
           work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:85, grade03:0 
         },
         { id: 5, 
           name: "全凯俊", 
@@ -36,7 +36,7 @@ angular.module('test', ['objectTable'])
           work01: 0, work02: 0, work03: 0, work04: 0, 
           work05: 0, work06: 0, work07: 0, work08: 0, 
           work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0
+          grade02:70, grade03:0
         },
         { id: 6, 
             name: "马驰傲", 
@@ -44,7 +44,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:85, grade03:0 
         },
         { id: 7, 
             name: "张铸涛", 
@@ -52,7 +52,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:80, grade03:0 
         },
         { id: 8, 
             name: "许丹妮", 
@@ -60,7 +60,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0
+          grade02:85, grade03:0
         },
         { id: 9, 
             name: "陈浩", 
@@ -68,7 +68,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 5,
-          grade02:0, grade03:0 
+          grade02:105, grade03:0 
         },
         { id: 10, 
             name: "杨登欢", 
@@ -76,7 +76,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:66, grade03:0 
         },
         { id: 12, 
             name: "任军", 
@@ -84,7 +84,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:85, grade03:0 
         },
         { id: 13, 
             name: "章宇凯", 
@@ -92,7 +92,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:85, grade03:0 
         },
         { id: 14, 
             name: "潘佳琦", 
@@ -100,7 +100,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:85, grade03:0 
         },
         { id: 15, 
             name: "裘家威", 
@@ -108,7 +108,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:20, grade03:0 
         },
         { id: 16, 
             name: "李玲巧", 
@@ -116,7 +116,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:70, grade03:0 
         },
         { id: 17, 
             name: "郑天阳", 
@@ -124,7 +124,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0
+          grade02:100, grade03:0
         },
         { id: 18, 
             name: "范莎莎", 
@@ -132,7 +132,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:85, grade03:0 
         },
         { id: 19, 
             name: "王永琪", 
@@ -140,7 +140,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:70, grade03:0 
         },
         { id: 21, 
             name: "白逢喜", 
@@ -148,7 +148,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:65, grade03:0 
         },
         { id: 22, 
             name: "夏远征", 
@@ -156,7 +156,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:75, grade03:0 
         },
         { id: 23, 
             name: "李传访", 
@@ -164,7 +164,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:65, grade03:0 
         },
         { id: 24, 
             name: "曾丽丽", 
@@ -172,7 +172,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 25,
-          grade02:0, grade03:0 
+          grade02:90, grade03:0 
         },
         { id: 25, 
             name: "陈王超", 
@@ -180,7 +180,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:70, grade03:0 
         },
         { id: 26, 
             name: "林群栋", 
@@ -188,7 +188,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0
+          grade02:100, grade03:0
         },
         { id: 27, 
             name: "王瑶", 
@@ -196,7 +196,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 20,
-          grade02:0, grade03:0 
+          grade02:100, grade03:0 
         },
         { id: 28, 
             name: "王浩", 
@@ -204,7 +204,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:70, grade03:0 
         },
         { id: 29, 
             name: "叶圣辉", 
@@ -212,7 +212,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:60, grade03:0 
         },
         { id: 30, 
             name: "阮盛威", 
@@ -220,7 +220,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:30, grade03:0 
         },
         { id: 31, 
             name: "徐道聪", 
@@ -228,7 +228,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 15,
-          grade02:0, grade03:0 
+          grade02:99, grade03:0 
         },
         { id: 32, 
             name: "高启中", 
@@ -236,7 +236,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:60, grade03:0 
         },
         { id: 34, 
             name: "姚文辉", 
@@ -244,7 +244,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:80, grade03:0 
         },
         { id: 35, 
             name: "倪浩", 
@@ -252,7 +252,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:75, grade03:0 
         },
         { id: 36, 
             name: "鲁好德", 
@@ -260,7 +260,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:80, grade03:0 
         },
         { id: 37, 
             name: "张天一", 
@@ -268,7 +268,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:60, grade03:0 
         },
         { id: 38, 
             name: "李彦东", 
@@ -276,7 +276,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:65, grade03:0 
         },
         { id: 39, 
             name: "刘晓辉", 
@@ -284,7 +284,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:85, grade03:0 
         },
         { id: 41, 
             name: "徐鹏", 
@@ -292,7 +292,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02:0, grade03:0 
+          grade02:75, grade03:0 
         }
     ];
     $scope.data2 = [
