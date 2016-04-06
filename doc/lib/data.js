@@ -601,11 +601,19 @@ angular.module('test', ['objectTable'])
               data[i].isPreExame=true;
           };
           data[i].grade01=data[i].preExam1Data+data[i].preExam2Data+data[i].preExam3Data+data[i].work01+data[i].work02+data[i].work03+data[i].work04+data[i].work05+data[i].work06+data[i].work07+data[i].work08+data[i].work09+data[i].work10+data[i].github;
-          data[i].grade04=data[i].grade01*0.2+data[i].grade02*0.3+data[i].grade03*0.5;
-         
+          data[i].grade04=$scope.toDecimal(data[i].grade01*0.2+data[i].grade02*0.3+data[i].grade03*0.5);
         }
 
     };
+
+    $scope.toDecimal=function(x) {    
+        var f = parseFloat(x);    
+        if (isNaN(f)) {    
+            return;    
+        }    
+        f = Math.round(x*100)/100;    
+        return f;    
+    }   
     
     $scope.getGrade($scope.data1);
     $scope.getGrade($scope.data2);
