@@ -1,0 +1,352 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.4.1
+    site: https://github.com/ksky521/nodePPT
+    date: 
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择符 - By whqet</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+<link rel="stylesheet" href="./css/theme.colors.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>CSS选择符</h1>
+<h2>演讲者：whqet</h2>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<h2>内容提纲</h2>
+<ol class="rollIn">
+<li>选择符概要</li>
+<li>元素选择符</li>
+<li>关系选择符</li>
+<li>属性选择符</li>
+<li>伪类选择符</li>
+<li>伪对象选择符</li>
+<li>选择符实验</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide" style="background:#25A1E1 url(/img/13/css3.jpg) left center no-repeat; background-size:100%" ><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>选择符</h2>
+<h3>选择符类似于条件判断</h3>
+<h3>决定哪些元素得以匹配，应用CSS规则</h3>
+<pre><code class="css">选择符{
+    CSS规则;
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide" style="background:#25A1E1 url(/img/13/css3.jpg) left center no-repeat; background-size:100%" ><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>选择符标准</h2>
+<p><a href="///www.w3.org/TR/selectors/" target="_blank">Selectors Level 3</a>标准
+-
+<a href="///www.w3.org/TR/selectors4/" target="_blank">Selectors Level 4</a>工作草案</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>选择符列表</h2>
+<iframe src="./demos/selectors.html" width="100%" frameborder="0"></iframe>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>元素选择符</h2>
+<table class="thin">
+    <thead>
+        <tr>
+            <th>选择符</th>
+            <th>名称</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>*</td>
+            <td>通配选择符(Universal Selector)</td>
+            <td>任意元素</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>类型选择符(Type Selector)</td>
+            <td>E类型的元素</td>
+        </tr>
+        <tr>
+            <td>E#myid</td>
+            <td>id选择符(ID Selector)</td>
+            <td>id值为&quot;myid&quot;的E元素</td>
+        </tr>
+        <tr>
+            <td>E.myclass</td>
+            <td>class选择符(Class Selector)</td>
+            <td>class值为&quot;myclass&quot;的E元素</td>
+        </tr>
+    </tbody>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>元素选择符</h2>
+<h3>通配符选择符——匹配任意元素</h3>
+<pre><code class="css">/*
+  简单粗暴的选择符
+  简单CSS重置，书写简单，功能强大，但执行效率太低，建议使用CSS Reset或normalize.css
+*/
+*{
+    padding:0;
+    margin: 0;
+}
+/*非常流行的用法，改变盒模型组成模式*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>元素选择符</h2>
+<h3>类型选择符——以html标签类型作选择符</h3>
+<pre><code class="css">/*
+  以html标签类型作选择符，范围内所有的该类型元素都会被选中
+  案例中选中所有的h1元素
+*/
+h1{
+    font-size: 48px;
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>元素选择符</h2>
+<h3>id选择符——以元素的id属性作为选择符</h3>
+<h3>id为唯一标识符，正常情况下只选中一个元素</h3>
+<pre><code class="css">/*
+  以元素的id属性作为选择符
+  一般用在页面布局上 
+*/
+#wrapper{
+    width:1000px;
+    margin: auto;
+}
+p#content{
+    text-indent: 2em;
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>元素选择符</h2>
+<h3>class选择符——以元素的class属性作为选择符</h3>
+<pre><code class="css">/*
+    可以给一个元素设置多个类，以空格分开
+    &lt;p class=&quot;content note&quot;&gt;多类选择符的使用&lt;/p&gt;
+*/
+/*选中class的content的元素*/
+.content{
+    text-align: left;
+}
+/*选中class的content的p类型元素*/
+p.note{
+    font-size: 24px;
+}
+/*选中同时具有content和note两个类的元素*/
+.content.note{
+    text-decoration: underline;
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>关系选择符</h2>
+<table class="thin">
+    <thead>
+        <tr>
+            <th>选择符</th>
+            <th>名称</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>E F</td>
+            <td>后代选择符</td>
+            <td>E元素的后代F元素</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>子代选择符</td>
+            <td>E元素的子代元素F</td>
+        </tr>
+        <tr>
+            <td>E#myid</td>
+            <td>相邻选择符</td>
+            <td>跟E后面相邻的F元素</td>
+        </tr>
+        <tr>
+            <td>E.myclass</td>
+            <td>兄弟选择符</td>
+            <td>E元素的后面兄弟F元素</td>
+        </tr>
+    </tbody>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>关系选择符</h2>
+<h3>后代选择符——选择所有层级的后代</h3>
+<pre><code class="css">/*
+    选择所有层次的后代
+*/
+header nav{
+    color:rgba(0,100,20,.3);
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>关系选择符</h2>
+<h3>子代选择符——选择儿子层级的后代</h3>
+<pre><code class="css">/*
+    选择儿子层级的后代
+*/
+header&gt;nav{
+    color:rgba(0,100,20,.3);
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>关系选择符</h2>
+<h3>子代选择符与后代选择符的不同</h3>
+<iframe src="./demos/editor.html?file=selector_ef" style="height:400px;"></iframe>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>关系选择符</h2>
+<h3>相邻选择符——跟E后面相邻的F元素(E+F)</h3>
+<pre><code class="css">/*
+    跟E后面相邻的F元素
+*/
+h2+p{
+    text-indent: 2em;
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>关系选择符</h2>
+<h3>兄弟选择符——E元素的后面兄弟F元素(E~F)</h3>
+<pre><code class="css">/*
+    E元素的后面兄弟F元素
+*/
+h2~p{
+    text-indent: 2em;
+}
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>关系选择符</h2>
+<h3>相邻选择符与兄弟选择符的不同</h3>
+<iframe src="./demos/editor.html?file=selector_sibling" style="height:400px;"></iframe>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>网页设计与制作</h1>
+<h2>旨为前端开发工程师的前端开发基础课程</h2>
+<p><small style="vertical-align:middle;display:inline-block"><iframe src="///ghbtns.com/github-btn.html?user=zptcsoft&repo=zptcsoft.github.io&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20" style="width:110px;height:20px;  background-color: transparent;"></iframe><iframe src="///ghbtns.com/github-btn.html?user=zptcsoft&repo=zptcsoft.github.io&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20" style="width:110px;height:20px;  background-color: transparent;"></iframe><iframe src="///ghbtns.com/github-btn.html?user=zptcsoft&repo=zptcsoft.github.io&type=follow&count=false" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="20" style="width:170px;height:20px;  background-color: transparent;"></iframe></small></p>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.4.1</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'rollIn',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="./js/demo.js"></script>
+<link rel="stylesheet" href="./style/01.css">
+<script src="./js/zoom.js"></script>
+
+<!--placeholder-->
+</body>
+</html>
