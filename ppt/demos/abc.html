@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html ng-app="ngShowcaseApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+table thead th {
+  cursor: default;
+}
+
+table thead th.sortable {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative .popover {
+  width: 200px;
+}
+
+.pagination-sm {
+  margin: 0;
+}
+
+.global-search {
+  margin-bottom: 20px;
+}
+    </style>
+</head>
+
+<body  ng-controller="ctrl.table.local">
+    <div class="input-group pull-right global-search">
+        <label class="input-group-addon">全局搜索</label>
+        <input type="text" class="form-control" ng-model="vm.filter.$" />
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th ng-repeat="column in vm.columns" ng-if="!column.hidden" ng-click="vm.sort.toggle(column)" ng-class="{sortable: column.sortable !== false}">
+                    {{column.label}}
+                    <i ng-if="column.name === vm.sort.column && vm.sort.direction" class="glyphicon {{vm.sort.direction|orderClass}}"></i>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="text" ng-model="vm.filter.id" class="form-control" />
+                </td>
+                <td>
+                    <input type="text" ng-model="vm.filter.name" class="form-control" />
+                </td>
+                <td>
+                    <input type="number" ng-model="vm.filter.followers" class="form-control" />
+                </td>
+                <td>
+                    <input type="number" ng-model="vm.filter.income" class="form-control" />
+                </td>
+                <td></td>
+            </tr>
+            <tr ng-repeat="item in vm.items|filter:vm.filter|orderBy:vm.sort.column:vm.sort.direction===-1|paging:vm.page.index:vm.page.size">
+                <td>
+                    {{item.id}}
+                    <span class="btn btn-primary btn-xs pull-right" title="编辑" ng-if="!item.$editing" ng-click="item.$editing = true">
+          <i class="glyphicon glyphicon-pencil"></i>
+        </span>
+                    <span class="btn btn-primary btn-xs pull-right" title="保存" ng-if="item.$editing" ng-click="item.$editing = false">
+          <i class="glyphicon glyphicon-floppy-disk"></i>
+        </span>
+                </td>
+                <td>
+                    <span ng-if="!item.$editing">{{item.name}}</span>
+                    <input type="text" class="form-control" ng-model="item.name" ng-if="item.$editing" />
+                </td>
+                <td class="text-right">
+                    <span ng-if="!item.$editing">{{item.followers|number}}</span>
+                    <input type="number" class="form-control" ng-model="item.followers" ng-if="item.$editing" />
+                </td>
+                <td class="text-right">
+                    <span ng-if="!item.$editing">{{item.income|currency}}</span>
+                    <input type="number" class="form-control" ng-model="item.income" ng-if="item.$editing" />
+                </td>
+                <td>
+                    <span class="btn btn-primary btn-xs" title="详情" ng-mouseenter="item.popover=true" ng-mouseleave="item.popover=false"><i
+            class="glyphicon glyphicon-comment"></i></span>
+                    <div class="relative">
+                        <div class="popover" ng-style="{display: item.popover?'block':'none'}">
+                            <div class="popover-title">
+                                {{item.id}} - {{item.name}}
+                            </div>
+                            <div class="popover-content">
+                                粉丝：{{item.followers|number}}
+                                <br/> 生日：{{item.birthday|date}}
+                                <br/> 年龄：{{vm.age(item.birthday)}}岁
+                                <br/> 收入：{{item.income|currency}}
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-md-3">
+            <select ng-model="vm.page.size" class="form-control" title="每页条目数" ng-options="pageSize for pageSize in [5, 20, 100]">
+            </select>
+        </div>
+        <div class="col-md-9">
+            <pagination total-items="vm.items|filter:vm.filter|size" ng-model="vm.page.index" max-size="5" items-per-page="vm.page.size" class="pagination-sm pull-right" boundary-links="true"></pagination>
+        </div>
+    </div>
+    <script src="lib/angular/angular.min.js"></script>
+    <script>
+
+    angular.module('ngShowcaseApp').controller('ctrl.table.local', function($scope) {
+        var vm = $scope.vm = {};
+        vm.page = {
+            size: 5,
+            index: 1
+        };
+        vm.sort = {
+            column: 'id',
+            direction: -1,
+            toggle: function(column) {
+                if (column.sortable === false)
+                    return;
+
+                if (this.column === column.name) {
+                    this.direction = -this.direction || -1;
+                } else {
+                    this.column = column.name;
+                    this.direction = -1;
+                }
+            }
+        };
+        // 构建模拟数据
+        vm.columns = [{
+            label: 'ID',
+            name: 'id',
+            type: 'string'
+        }, {
+            label: '姓名',
+            name: 'name',
+            type: 'string'
+        }, {
+            label: '粉丝数',
+            name: 'followers',
+            type: 'number'
+        }, {
+            label: '收入',
+            name: 'income',
+            type: 'currency'
+        }, {
+            label: '',
+            name: 'actions',
+            sortable: false
+        }];
+        // 供页面中使用的函数
+        vm.age = function(birthday) {
+            return moment().diff(birthday, 'years');
+        };
+
+        vm.items = [];
+        var MAX_NUM = 10 * 1000;
+
+        function rand(min, max) {
+            return min + Math.round(Math.random() * (max - min));
+        }
+        for (var i = 0; i < MAX_NUM; ++i) {
+            var id = rand(0, MAX_NUM);
+            vm.items.push({
+                id: i + 1,
+                name: 'Name' + id, // 字符串类型
+                followers: rand(0, 100 * 1000 * 1000), // 数字类型
+                birthday: moment().subtract('day', rand(365, 365 * 50)).toDate(), // 日期类型
+                summary: '这是一个测试' + i,
+                income: rand(1000, 100000) // 金额类型
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>
