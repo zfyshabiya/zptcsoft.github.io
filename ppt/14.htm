@@ -273,6 +273,351 @@ h2~p{
 <h3>相邻选择符与兄弟选择符的不同</h3>
 <iframe src="./demos/editor.html?file=selector_sibling" style="height:400px;"></iframe>
 </article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>属性选择符</h2>
+<table class="thin">
+    <thead>
+        <tr>
+            <th>选择符</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>E[foo]</td>
+            <td>具有&quot;foo&quot;属性的E类型元素</td>
+        </tr>
+        <tr>
+            <td>E[foo=&quot;bar&quot;]</td>
+            <td>具有&quot;foo&quot;属性且值为&quot;bar&quot;的E类型元素</td>
+        </tr>
+        <tr>
+            <td>E[foo~=&quot;bar&quot;]</td>
+            <td>具有&quot;foo&quot;属性且值为用空格分隔的列表，其中一个为&quot;bar&quot;的E元素(包含只有一个值且该值等于val的情况)</td>
+        </tr>
+        <tr>
+            <td>E[foo^=&quot;bar&quot;]</td>
+            <td>具有&quot;foo&quot;属性且值以&quot;bar&quot;开头的E元素</td>
+        </tr>
+        <tr>
+            <td>E[foo$=&quot;bar&quot;]</td>
+            <td>具有&quot;foo&quot;属性且值以&quot;bar&quot;结尾的E元素</td>
+        </tr>
+        <tr>
+            <td>E[foo*=&quot;bar&quot;]</td>
+            <td>具有&quot;foo&quot;属性且值包含&quot;bar&quot;字符串的E元素</td>
+        </tr>
+        <tr>
+            <td>E[foo|=&quot;en&quot;]</td>
+            <td>具有&quot;foo&quot;属性且值为以&quot;en&quot;开头并用&quot;-&quot;分隔的字符串的E元素，包含值仅为&quot;en&quot;的E元素</td>
+        </tr>
+    </tbody>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>属性选择符</h2>
+<h3>应用案例</h3>
+<iframe src="./demos/editor.html?file=selector_icon" style="height:400px;"></iframe>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>伪类选择符</h2>
+<h3>结构性伪类</h3>
+<table class="thin">
+        <thead>
+            <tr>
+                <th class="pattern">模式
+                </th>
+                <th>意义
+                </th>
+                <th>定义
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pattern">E:root
+                </td>
+                <td>作为文档根元素的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:nth-child(n)
+                </td>
+                <td>作为第n个子元素的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:nth-last-child(n)
+                </td>
+                <td>作为倒数第n个子元素的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:nth-of-type(n)
+                </td>
+                <td>第n个同类型的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:nth-last-of-type(n)
+                </td>
+                <td>倒数第n个同类型的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:first-child
+                </td>
+                <td>作为第一个子元素的E元素
+                </td>
+                <td>2
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:last-child
+                </td>
+                <td>作为第一个子元素的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:first-of-type
+                </td>
+                <td>作为同类型中一个元素的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:last-of-type
+                </td>
+                <td>作为同类型中最后一个元素的E元素
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:only-child
+                </td>
+                <td>作为“独生”子元素的E元素
+                </td>
+
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:only-of-type
+                </td>
+                <td>作为唯一同类型元素的E元素
+                </td>
+
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:empty
+                </td>
+                <td>没有子元素的E元素
+                </td>
+
+                <td>3
+                </td>
+            </tr>
+        </tbody>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>伪类选择符</h2>
+<h3><a href="./demos/selector_pseudo.html" target="_blank">结构性伪类应用案例</a></h3>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>伪类选择符</h2>
+<h3>其他伪类</h3>
+<table class="thin">
+        <thead>
+            <tr>
+                <th class="pattern">模式
+                </th>
+                <th>意义
+                </th>
+                <th>分类
+                </th>
+                <th>定义
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pattern">E:link
+                    <br>E:visited
+                </td>
+                <td>未访问过和访问过的E元素
+                </td>
+                <td>链接伪类
+                </td>
+                <td>1
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:active
+                    <br>E:hover
+                    <br>E:focus
+                </td>
+                <td>E元素的指定交互状态
+                </td>
+                <td>用户交互伪类
+                </td>
+                <td>1、2
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:target
+                </td>
+                <td>相关URL指向的E元素
+                </td>
+                <td>目标伪类
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:lang(fr)
+                </td>
+                <td>使用特殊语言(fr)的E元素
+                </td>
+                <td>语言伪类
+                </td>
+                <td>2
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:enabled
+                    <br>E:disabled
+                </td>
+                <td>处于启用或禁用状态的UI元素
+                </td>
+                <td>UI状态伪类
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:checked
+                </td>
+                <td>处于checked状态的UI元素
+                </td>
+                <td>UI状态伪类
+                </td>
+                <td>3
+                </td>
+            </tr>
+            <tr>
+                <td class="pattern">E:not(s)
+                </td>
+                <td>不匹配&quot;s&quot;选择符的E元素
+                </td>
+                <td>非伪类选择符
+                </td>
+                <td>3
+                </td>
+            </tr>
+        </tbody>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>伪类选择符</h2>
+<h3>结构性伪类应用案例</h3>
+<iframe src="./demos/editor.html?file=selector_pseudeoclass" style="height:400px;"></iframe>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>伪类选择符</h2>
+<h3><a href="./demos/selector_target.html" target="_blank">目标伪类应用案例</a></h3>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>伪对象选择符</h2>
+<table class="thin">
+    <thead>
+        <tr>
+            <th class="pattern">模式
+            </th>
+            <th>意义
+            </th>
+            <th>分类
+            </th>
+            <th>定义
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="pattern">E::first-line
+            </td>
+            <td>E对象的第一行样式
+            </td>
+            <td><a href="#first-line">伪对象选择符</a>
+            </td>
+            <td>1
+            </td>
+        </tr>
+        <tr>
+            <td class="pattern">E::first-letter
+            </td>
+            <td>E对象的第一个字符样式
+            </td>
+            <td><a href="#first-letter">伪对象选择符</a>
+            </td>
+            <td>1
+            </td>
+        </tr>
+        <tr>
+            <td class="pattern">E::before
+            </td>
+            <td>E元素的生成对象before
+            </td>
+            <td><a href="#gen-content">伪对象选择符</a>
+            </td>
+            <td>2
+            </td>
+        </tr>
+        <tr>
+            <td class="pattern">E::after
+            </td>
+            <td>E元素的生成对象after
+            </td>
+            <td><a href="#gen-content">伪对象选择符</a>
+            </td>
+            <td>2
+            </td>
+        </tr>
+    </tbody>
+</table>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vleft">
+
+<h2>伪对象选择符</h2>
+<h3>伪对象选择符应用案例</h3>
+
+</article></section></slide>
 <slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
 <h1>网页设计与制作</h1>
 <h2>旨为前端开发工程师的前端开发基础课程</h2>
