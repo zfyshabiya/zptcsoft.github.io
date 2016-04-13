@@ -12,7 +12,7 @@ angular.module('test', ['objectTable'])
           work01: 0, work02: 0, work03: 0, work04: 0, 
           work05: 0, work06: 0, work07: 0, work08: 0, 
           work09: 0, work10: 0, github: 0,
-          grade02:78, grade03:0
+          grade02:100, grade03:0
         },
         { id: 2, 
           name: "李明豪", 
@@ -20,7 +20,7 @@ angular.module('test', ['objectTable'])
           work01: 0, work02: 0, work03: 0, work04: 0, 
           work05: 0, work06: 0, work07: 0, work08: 0, 
           work09: 0, work10: 0, github: 0,
-          grade02:80, grade03:0 
+          grade02:100, grade03:0 
         },
         { id: 4,
           name: "尹飞燕", 
