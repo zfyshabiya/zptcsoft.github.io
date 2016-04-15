@@ -84,7 +84,7 @@ angular.module('test', ['objectTable'])
             work01: 0, work02: 0, work03: 0, work04: 0, 
             work05: 0, work06: 0, work07: 0, work08: 0, 
             work09: 0, work10: 0, github: 0,
-          grade02：100, grade03:0 
+          grade02:100, grade03:0 
         },
         { id: 13, 
             name: "章宇凯", 
